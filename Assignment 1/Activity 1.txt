@@ -1,0 +1,36 @@
+How To Make a Turkey and Cheese Sandwhich
+
+find the bread bag containing sliced bread
+take the bread bag containing sliced bread from where it is stored
+place the bread bag containing the sliced bread in it onto the counter
+find the bag containing deli sliced turkey
+take the bag containing deli sliced turkey from where it is stored
+place the bag containing deli sliced turkey on the counter
+find the bag containing deli sliced cheese
+take the bag containing sliced cheese from where it is stored 
+place the bag containing deli sliced cheese on the counter
+find the clean plates
+take a clean plate out from where it is stored
+place the clean plate upright on the counter
+open the bag containing the sliced bread
+open the bag containing the deli sliced turkey
+open the bag containing the deli sliced cheese
+take one slice of bread out from the bread bag containing bread
+rotate the slice of bread so that the widest face is facing down
+place the slice of bread on the right side of the plate
+repeat step from line 18
+repeat step from line 19
+place the slice of bread on the left side of the plat
+take a slice of turkey from the bag with deli sliced turkey
+put one piece of turkey on top of the left piece of bread
+repeat step from line 24
+put one piece of turkey on top of the right piece of bread
+take 1 slice of cheese from the bag with deli sliced cheese 
+place the cheese on top of the turkey on the right piece of bread
+close the bag containing the sliced bread
+close the bag containing the deli sliced turkey
+close the bag containing the deli sliced cheese
+put the bags back where they origonally were stored unless one of the bags is empty if a bag is empty throw the empty bag away and put the rest back where they were oriogonally stored
+combine the left and right sides of the sandwich with the bread faces facing outward
+eat sandwich
+place dirty plate in either the sink or the dishwasher if the dishwasher is not full
