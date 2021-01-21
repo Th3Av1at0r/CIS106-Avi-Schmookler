@@ -18,12 +18,12 @@ open the bag containing the deli sliced cheese
 take one slice of bread out from the bread bag containing bread
 rotate the slice of bread so that the widest face is facing down
 place the slice of bread on the right side of the plate
-repeat step from line 18
-repeat step from line 19
+repeat step from line 18 once
+repeat step from line 19 once
 place the slice of bread on the left side of the plat
 take a slice of turkey from the bag with deli sliced turkey
 put one piece of turkey on top of the left piece of bread
-repeat step from line 24
+repeat step from line 24 once
 put one piece of turkey on top of the right piece of bread
 take 1 slice of cheese from the bag with deli sliced cheese 
 place the cheese on top of the turkey on the right piece of bread
