@@ -1,5 +1,4 @@
 Function Main
-    ... This program displays "Hello world!"
-    Output "Hello world!"
+    ... This program displays "Hello Avi!"
+    Output "Hello Avi!"
 End
-
