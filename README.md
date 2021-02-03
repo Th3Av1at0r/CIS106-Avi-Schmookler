@@ -10,4 +10,4 @@ I selected Python 3 (Python) as my language, I have used it a bit before this so
 
 ## Assignment 3
 
-To be honest I didn't learn much if anything from this assignment considering the fact that I have gone far ahead on flowgorithm so that I could create my own code for personal use. However, the concept of this project is very usefull because it teaches about inputs and how to use what one inputs in different ways. The project that I did, project 2, I felt was a very fun, simple project but I added a little something simply due to a personal itch to do so.
+To be honest I didn't learn much if anything from this assignment considering the fact that I have gone far ahead on flowgorithm so that I could create my own code for personal use. However, the concept of this project is very usefull because it teaches about inputs and how to use what one inputs in different ways. The project that I did, project 2, I felt was a very fun, simple project.
