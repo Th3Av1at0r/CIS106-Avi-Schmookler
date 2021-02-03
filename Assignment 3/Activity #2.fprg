@@ -13,7 +13,7 @@
         <body>
             <declare name="YRS" type="Integer" array="False" size=""/>
             <output expression="&quot;How old are you in Years?&quot;" newline="True"/>
-            <comment text="This program gives you your age in months, days, hours, muinets, and seconds I added the hours, munites, and seconds because I was interested in my own"/>
+            <comment text="This program gives you your age in months, days, hours, muinets, and seconds"/>
             <input variable="YRS"/>
             <declare name="MTH" type="Integer" array="False" size=""/>
             <assign variable="MTH" expression="YRS*12"/>
