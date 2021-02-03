@@ -7,3 +7,7 @@ Hello World, My name is Avi Schmookler, I have joined the Cis 106 class because 
 ## Assignment 2
 
 I selected Python 3 (Python) as my language, I have used it a bit before this so I have a small understanding of how it works. I intend to extend my knowledge on it and use it in a future job as a Data Scientist. I want to use it as well, to make an easy to use D&D program for actions and such. I plan on doing that later tnight. I tried out GDB and Thonny but I think I am going to use GDB because it seems a bit more user friendly and it likes copy paste a bit more.
+
+## Assignment 3
+
+To be honest I didn't learn much if anything from this assignment considering the fact that I have gone far ahead on flowgorithm so that I could create my own code for personal use. However, the concept of this project is very usefull because it teaches about inputs and how to use what one inputs in different ways. The project that I did, project 2, I felt was a very fun, simple project but I added a little something simply due to a personal itch to do so.
