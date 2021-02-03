@@ -1,6 +1,6 @@
 print("How old are you in Years?")
 
-# This program gives you your age in months, days, hours, muinets, and seconds I added the hours, munites, and seconds because I was interested in my own
+# This program gives you your age in months, days, hours, muinets, and seconds
 yRS = int(input())
 mTH = yRS * 12
 dYS = yRS * 365
