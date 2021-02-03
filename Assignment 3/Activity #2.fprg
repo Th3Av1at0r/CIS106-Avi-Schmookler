@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="aviel"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-02-03 09:11:23 AM"/>
+        <attribute name="created" value="YXZpZWw7REVTS1RPUC0wRkEwTjFGOzIwMjEtMDItMDM7MDg6NDM6MDEgQU07Mjc5NQ=="/>
+        <attribute name="edited" value="YXZpZWw7REVTS1RPUC0wRkEwTjFGOzIwMjEtMDItMDM7MDk6MTE6MjMgQU07MjsyOTA0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="YRS" type="Integer" array="False" size=""/>
+            <output expression="&quot;How old are you in Years?&quot;" newline="True"/>
+            <comment text="This program gives you your age in months, days, hours, muinets, and seconds I added the hours, munites, and seconds because I was interested in my own"/>
+            <input variable="YRS"/>
+            <declare name="MTH" type="Integer" array="False" size=""/>
+            <assign variable="MTH" expression="YRS*12"/>
+            <declare name="DYS" type="Integer" array="False" size=""/>
+            <assign variable="DYS" expression="YRS*365"/>
+            <declare name="HRS" type="Integer" array="False" size=""/>
+            <assign variable="HRS" expression="DYS*24"/>
+            <declare name="MIN" type="Integer" array="False" size=""/>
+            <assign variable="MIN" expression="HRS*60"/>
+            <declare name="SEC" type="Integer" array="False" size=""/>
+            <assign variable="SEC" expression="MIN*60"/>
+            <output expression="&quot;Your age on your birthday is &quot;&amp;MTH&amp;&quot; Months or &quot;&amp;DYS&amp;&quot; Days or &quot;&amp;HRS&amp;&quot; Hours or &quot;&amp;MIN&amp;&quot; Munites or &quot;&amp;SEC&amp;&quot; Seconds&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
