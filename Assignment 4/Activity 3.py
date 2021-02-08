@@ -1,5 +1,5 @@
-# This program takles a miles input and translates it into yards, feet, and inches.
-# It also translates it into kilometers, meters, and centimeters.
+#My program takes a mile input and translates it into yards, feet, and inches.
+#It also translates it into kilometers, meters, and centimeters.
 
 print("how many miles?")
 miles = float(input())
