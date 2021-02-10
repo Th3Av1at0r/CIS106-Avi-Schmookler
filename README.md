@@ -14,4 +14,4 @@ To be honest I didn't learn much if anything from this assignment considering th
 
 ## Assignment 4
 
-This assignment was extremely fun to do, I finially got to start to code again and it felt amazing being able to type out simple code again. This feeling is my favorite thing in the world. I did activity 3 and four for assignment 4 it was pretty simple to do and dodn't take much time, however, the inport of pi was slightly confusing considering that google wanted me to use the term insert so it was a bit confusing.
+This assignment was extremely fun to do, I finially got to start to code again and it felt amazing being able to type out simple code again. This feeling is my favorite thing in the world. I did activity 3 and four for assignment 4 it was pretty simple to do and dodn't take much time, however, the inport of pi was slightly confusing considering that google wanted me to use the term insert so it was a bit confusing. I was able to use flogorithm to remember the basics of print and insert and such
