@@ -1,18 +1,19 @@
 # When you gove my program a length and height it gives you the area of
 # a parallellagram, a triangle and a circle with the given dimentions 
 
-print ("What is the Length?")
-Length = float(input())
-print ("What is the Height?")
-Height = float(input())
-
-Parallellagram = Length * Height
-Triangle = Parallellagram / 2
-Radius = Height / 2
 import math
-Circle = Radius * Radius * math.pi
 
-print ("your dimensions as a Parallellagram is " + str(Parallellagram))
-print ("your dimensions as a Triangle is " + str(Triangle))
-print ("your dimensions as a Circle is " + str(Circle))
-print ("units squared")
+print ("What is the Length?")
+base = float(input())
+print ("What is the Height?")
+height = float(input())
+print ("What is theRadius?")
+radius = float(input())
+
+parallellagram = base * height
+triangle = Parallellagram / 2
+circle = radius * radius * math.pi
+
+print ("your area as a Parallellagram is " + str(Parallellagram))
+print ("your area as a Triangle is " + str(Triangle))
+print ("your area as a Circle is " + str(Circle))
