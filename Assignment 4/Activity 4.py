@@ -11,9 +11,9 @@ print("What is theRadius?")
 radius = float(input())
 
 parallellogram = base * height
-triangle = Parallellogram / 2
+triangle = parallellogram / 2
 circle = radius * radius * math.pi
 
-print("your area as a Parallellogram is " + str(Parallellagram))
-print("your area as a Triangle is " + str(Triangle))
-print("your area as a Circle is " + str(Circle))
+print("your area as a Parallellogram is " + str(parallellogram))
+print("your area as a Triangle is " + str(triangle))
+print("your area as a Circle is " + str(circle))
