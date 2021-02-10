@@ -3,17 +3,17 @@
 
 import math
 
-print ("What is the Length?")
+print("What is the Length?")
 base = float(input())
-print ("What is the Height?")
+print("What is the Height?")
 height = float(input())
-print ("What is theRadius?")
+print("What is theRadius?")
 radius = float(input())
 
 parallellagram = base * height
 triangle = Parallellagram / 2
 circle = radius * radius * math.pi
 
-print ("your area as a Parallellagram is " + str(Parallellagram))
-print ("your area as a Triangle is " + str(Triangle))
-print ("your area as a Circle is " + str(Circle))
+print("your area as a Parallellagram is " + str(Parallellagram))
+print("your area as a Triangle is " + str(Triangle))
+print("your area as a Circle is " + str(Circle))
