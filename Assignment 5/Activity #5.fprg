@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="aviel"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-02-15 06:53:49 PM"/>
+        <attribute name="created" value="YXZpZWw7REVTS1RPUC0wRkEwTjFGOzIwMjEtMDItMTU7MDY6NDQ6MjAgUE07MjgxMw=="/>
+        <attribute name="edited" value="YXZpZWw7REVTS1RPUC0wRkEwTjFGOzIwMjEtMDItMTU7MDY6NTM6NDkgUE07MjsyOTMz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="This program takes length and width and gives you area"/>
+            <declare name="length" type="Real" array="False" size=""/>
+            <output expression="&quot;How many feet in the Length&quot;" newline="True"/>
+            <input variable="length"/>
+            <declare name="width" type="Integer" array="False" size=""/>
+            <output expression="&quot;How many feet in the Width&quot;" newline="True"/>
+            <input variable="width"/>
+            <declare name="areainfeet" type="Integer" array="False" size=""/>
+            <assign variable="areainfeet" expression="length*width"/>
+            <output expression="&quot;your area in feet is &quot;&amp;areainfeet" newline="True"/>
+            <declare name="areainyards" type="Integer" array="False" size=""/>
+            <assign variable="areainyards" expression="areainfeet/9"/>
+            <output expression="&quot;your area in Yards is &quot;&amp;areainyards" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
