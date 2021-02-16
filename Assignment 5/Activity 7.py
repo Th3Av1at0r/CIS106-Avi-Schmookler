@@ -7,10 +7,11 @@ def dogyear(age):
 # This program takes your dogs name and age
 # and gives you the age in dog years
 
+
 print("What's your dog's name?")
 name = (input())
 
-print ("How many years old is your dog?")
+print("How many years old is your dog?")
 age = float(input())
 
 dogage = dogyear(age)
