@@ -9,7 +9,7 @@ def dogyear(age):
 
 
 print("What's your dog's name?")
-name = (input())
+name =(input())
 
 print("How many years old is your dog?")
 age = float(input())
