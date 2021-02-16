@@ -15,3 +15,7 @@ To be honest I didn't learn much if anything from this assignment considering th
 ## Assignment 4
 
 This assignment was extremely fun to do, I finially got to start to code again and it felt amazing being able to type out simple code again. This feeling is my favorite thing in the world. I did activity 3 and four for assignment 4 it was pretty simple to do and dodn't take much time, however, the inport of pi was slightly confusing considering that google wanted me to use the term insert so it was a bit confusing. I was able to use Flogorithm to remember the basics of print and insert and such however, while doing activity 4 I dodn't use it much if at all.
+
+## Assignment 5
+
+This assignment was interesting, it felt as if I was doing earlier projects, the activities wern't super challenging, I did activities five and seven, five was the one where I had to make a program where it calculates the area of a room where the length and the width are given as inputs. The second activity that I did, activity seven, required me to create a program where I asked for the name of the user's dog and ask for the age of the user's dog. My program then multiplys the age of the user's dog by seven and then gives the age of the user's dog in dog years. It was an interesting project.
