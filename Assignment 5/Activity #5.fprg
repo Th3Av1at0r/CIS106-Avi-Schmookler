@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="aviel"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-02-16 04:37:40 PM"/>
+        <attribute name="created" value="YXZpZWw7REVTS1RPUC0wRkEwTjFGOzIwMjEtMDItMTY7MDM6MTI6NTUgUE07MjgxNA=="/>
+        <attribute name="edited" value="YXZpZWw7REVTS1RPUC0wRkEwTjFGOzIwMjEtMDItMTY7MDQ6Mzc6NDAgUE07MjsyOTI1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="This program takes length and width in feet and gives&#13;&#10;area in yards"/>
+            <declare name="length" type="Real" array="False" size=""/>
+            <output expression="&quot;How many Feet in the Length?&quot;" newline="True"/>
+            <input variable="length"/>
+            <declare name="width" type="Real" array="False" size=""/>
+            <output expression="&quot;How many Feet in the Width?&quot;" newline="True"/>
+            <input variable="width"/>
+            <declare name="areainyards" type="Integer" array="False" size=""/>
+            <assign variable="areainyards" expression="Yards(length,width)"/>
+            <output expression="&quot;The area in yards is &quot;&amp;areainyards" newline="True"/>
+        </body>
+    </function>
+    <function name="Yards" type="Real" variable="areainyards">
+        <parameters>
+            <parameter name="length" type="Real" array="False"/>
+            <parameter name="width" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="areainyards" type="Real" array="False" size=""/>
+            <assign variable="areainyards" expression="(length * width) / 9"/>
+        </body>
+    </function>
+</flowgorithm>
