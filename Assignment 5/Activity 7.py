@@ -29,8 +29,6 @@ def getdogage(humandogage):
 # Main
 # This program takes your dogs name and age
 # and gives you the age in dog years
-
-
 dogname = getdogname()
 humandogage = gethumandogage()
 dogage = getdogage(humandogage)
