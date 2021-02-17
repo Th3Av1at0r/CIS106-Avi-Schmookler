@@ -19,6 +19,7 @@ def gethumandogage():
     
     return humandogage
 
+
 def getdogage(humandogage):
     
     dogage = humandogage * 7
@@ -28,6 +29,7 @@ def getdogage(humandogage):
 # Main
 # This program takes your dogs name and age
 # and gives you the age in dog years
+
 
 dogname = getdogname()
 humandogage = gethumandogage()
