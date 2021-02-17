@@ -1,35 +1,37 @@
-def getdogname():
+def get_dog_name():
     
     print("What's your dog's name?")
-    dogname = (input())
+    dog_name = (input())
     
-    return dogname
+    return dog_name
     
     
-def displayresult(dogname, dogage):
+def display_result(dog_name, dog_age):
 
-    print(str(dogname) + " is " + str(dogage) + " years old in dog years")
+    print(str(dog_name) + " is " + str(dog_age) + " years old in dog years")
     
     
-def gethumandogage():
+def get_human_dog_age():
     
     print("How many years old is your dog?")
 
-    humandogage = float(input())
+    human_dog_age = float(input())
     
-    return humandogage
+    return human_dog_age
 
 
-def getdogage(humandogage):
+def get_dog_age(human_dog_age):
     
-    dogage = humandogage * 7
+    dog_age = human_dog_age * 7
     
-    return dogage
+    return dog_age
 
 # Main
 # This program takes your dogs name and age
 # and gives you the age in dog years
-dogname = getdogname()
-humandogage = gethumandogage()
-dogage = getdogage(humandogage)
-displayresult(dogname, dogage)
+
+def main():
+    dog_name = get_dog_name()
+    human_dog_age = get_human_dog_age()
+    dog_age = get_dog_age(human_dog_age)
+    display_result(dog_name, dog_age)
