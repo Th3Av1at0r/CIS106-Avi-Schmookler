@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="aviel"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-02-17 11:42:11 AM"/>
+        <attribute name="created" value="YXZpZWw7REVTS1RPUC0wRkEwTjFGOzIwMjEtMDItMTc7MTE6Mjg6NTcgQU07MjgwOA=="/>
+        <attribute name="edited" value="YXZpZWw7REVTS1RPUC0wRkEwTjFGOzIwMjEtMDItMTc7MTE6NDI6MTEgQU07MjsyOTAz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="This program takes length and width in feet&#13;&#10;and it outputs area in yards"/>
+            <declare name="length" type="Real" array="False" size=""/>
+            <declare name="feetarea" type="Real" array="False" size=""/>
+            <assign variable="length" expression="getlength()"/>
+            <assign variable="feetarea" expression="calculatearea(length)"/>
+            <call expression="displayresult(feetarea)"/>
+        </body>
+    </function>
+    <function name="calculatearea" type="Real" variable="feetarea">
+        <parameters>
+            <parameter name="length" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="width" type="Real" array="False" size=""/>
+            <output expression="&quot;what is the width in feet&quot;" newline="True"/>
+            <input variable="width"/>
+            <declare name="feetarea" type="Real" array="False" size=""/>
+            <assign variable="feetarea" expression="length * width"/>
+        </body>
+    </function>
+    <function name="displayresult" type="None" variable="">
+        <parameters>
+            <parameter name="feetarea" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="yardsarea" type="Real" array="False" size=""/>
+            <assign variable="yardsarea" expression="feetarea / 9"/>
+            <output expression="&quot;your area in yards is &quot;&amp;yardsarea" newline="True"/>
+        </body>
+    </function>
+    <function name="getlength" type="Real" variable="length">
+        <parameters/>
+        <body>
+            <declare name="length" type="Real" array="False" size=""/>
+            <output expression="&quot;What is the length in feet?&quot;" newline="True"/>
+            <input variable="length"/>
+        </body>
+    </function>
+</flowgorithm>
