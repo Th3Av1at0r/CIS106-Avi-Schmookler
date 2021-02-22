@@ -6,7 +6,7 @@
 
 def get_dog_name():
 
-    print ("What's your dog's name?")
+    print("What's your dog's name?")
     dog_name = input()
 
     return dog_name
@@ -14,13 +14,13 @@ def get_dog_name():
 
 def display_result(dog_name, dog_age):
 
-    print (str(dog_name) + ' is ' + str(dog_age) \
+    print(str(dog_name) + ' is ' + str(dog_age) \
         + ' years old in dog years')
 
 
 def get_human_dog_age():
 
-    print ('How many years old is your dog?')
+    print('How many years old is your dog?')
 
     human_dog_age = float(input())
 
