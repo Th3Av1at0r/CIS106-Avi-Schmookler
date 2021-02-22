@@ -19,3 +19,7 @@ This assignment was extremely fun to do, I finially got to start to code again a
 ## Assignment 5
 
 This assignment was interesting, it felt as if I was doing earlier projects, the activities wern't super challenging, I did activities five and seven, five was the one where I had to make a program where it calculates the area of a room where the length and the width are given as inputs. The second activity that I did, activity seven, required me to create a program where I asked for the name of the user's dog and ask for the age of the user's dog. My program then multiplys the age of the user's dog by seven and then gives the age of the user's dog in dog years. It was an interesting project.
+
+## Assignment 6
+
+This assignment was very fun and interesting, we needed to do two of the older activities. I chose activities four and seven. For activity seven I had to again make a program where I asked for the name of the user's dog and ask for the age of the user's dog. The program takes the information and calculates the dog's age in dog years by multiplying the age given by seven and then displays the name and age of the dog. Activity four was the one where I had do take the length and width and give the area for two different shapes. I chose the triangle and parallellogram again because it seemed easy.
