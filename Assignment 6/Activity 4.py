@@ -1,15 +1,16 @@
 # This program was beautified by:
 # tutorialspoint "online formatter"
 # This program takes your length and width
-# and gives you the area of a parallellagram
+# and gives you the area of a parallellogram
 # and a triangle with the same dimensions
 
-
-def display_result(parallellagram_area, triangle_area):
+def display_result(parallellogram_area, triangle_area):
     
-    print ("Your area as a parallellagram is " + str(parallellagram_area))
+    print ("Your area as a parallellogram is " \
+    + str(parallellogram_area))
     
-    print ("Your area as a triangle is " + str(triangle_area))
+    print ("Your area as a triangle is " \
+    + str(triangle_area))
     
     
 def get_length():
@@ -19,7 +20,6 @@ def get_length():
 
     return length
     
-    
 def get_width():
     
     print ("What's your width?")
@@ -27,30 +27,27 @@ def get_width():
 
     return width
     
+def get_parallellogram_area(length, width):
     
-def get_parallellagram_area(length, width):
+    parallellogram_area = length * width
     
-    parallellagram_area = length * width
+    return parallellogram_area
     
-    return parallellagram_area
+def get_triangle_area(parallellogram_area):
     
-    
-def get_triangle_area(parallellagram_area):
-    
-    triangle_area = parallellagram_area / 2
+    triangle_area = parallellogram_area / 2
     
     return triangle_area
     
     
 # main
-
 def main():
     
     length = get_length()
     width = get_width()
-    parallellagram_area = get_parallellagram_area(length, width)
-    triangle_area = get_triangle_area(parallellagram_area)
-    display_result(parallellagram_area, triangle_area)
+    parallellogram_area = get_parallellogram_area(length, width)
+    triangle_area = get_triangle_area(parallellogram_area)
+    display_result(parallellogram_area, triangle_area)
 
 
 main()
