@@ -1,6 +1,6 @@
 # This program was beautified by:
 # tutorialspoint "online formatter"
-# This program takes your length and width
+# This program takes your base and height
 # and gives you the area of a parallellogram
 # and a triangle with the same dimensions
 
@@ -13,25 +13,25 @@ def display_result(parallellogram_area, triangle_area):
     + str(triangle_area))
     
     
-def get_length():
+def get_base():
     
-    print("What's your length?")
-    length = float(input())
+    print("What's your base?")
+    base = float(input())
 
-    return length
+    return base
     
     
-def get_width():
+def get_height():
     
-    print("What's your width?")
-    width = float(input())
+    print("What's your height?")
+    height = float(input())
 
-    return width
+    return height
     
     
-def get_parallellogram_area(length, width):
+def get_parallellogram_area(base, height):
     
-    parallellogram_area = length * width
+    parallellogram_area = base * height
     
     return parallellogram_area
     
@@ -46,9 +46,9 @@ def get_triangle_area(parallellogram_area):
 # main
 def main():
     
-    length = get_length()
-    width = get_width()
-    parallellogram_area = get_parallellogram_area(length, width)
+    base = get_base()
+    height = get_height()
+    parallellogram_area = get_parallellogram_area(base, height)
     triangle_area = get_triangle_area(parallellogram_area)
     display_result(parallellogram_area, triangle_area)
 
