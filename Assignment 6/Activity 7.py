@@ -15,8 +15,7 @@ def get_dog_name():
 def display_result(dog_name, dog_age):
 
     print(str(dog_name) + ' is ' + str(dog_age) 
-          
-        + ' years old in dog years')
+    + ' years old in dog years')
 
 
 def get_human_dog_age():
