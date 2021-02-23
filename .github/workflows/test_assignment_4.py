@@ -10,6 +10,10 @@ def test_assignment_4_folder_structure():
         "package-lock.json|test.csproj")
 
 
+def test_assignment_4_duplicate_activities():
+    test.check_duplicate_activities("Assignment 3", "Assignment 4")
+
+
 def test_assignment_4_required_source_code_files():
     test.check_required_files("Assignment 4", "(cs|java|js|lua|py)", 2)
 
@@ -842,16 +846,16 @@ def test_assignment_4_activity_6_gallons_output():
         "Assignment 4",
         "Activity 6",
         "",
-        "10\n10\n8\n300\n30\n",
-        "2",
+        "10\n10\n8\n30\n300\n",
+        "2|11",
         "gallons calculation output is incorrect.")
 
     test.check_source_code_output(
         "Assignment 4",
         "Activity 6",
         "",
-        "10\n10\n8\n300\n30\n",
-        "gallon.+?2|2.+?gallon",
+        "10\n10\n8\n30\n300\n",
+        "gallon.+?(2|11)|(2|11).+?gallon",
         "gallons output label is missing or incorrect.")
 
 
@@ -860,16 +864,16 @@ def test_assignment_4_activity_6_cost_output():
         "Assignment 4",
         "Activity 6",
         "",
-        "10\n10\n8\n300\n30\n",
-        "60.0",
+        "10\n10\n8\n30\n300\n",
+        "60|3300",
         "cost calculation output is incorrect.")
 
     test.check_source_code_output(
         "Assignment 4",
         "Activity 6",
         "",
-        "10\n10\n8\n300\n30\n",
-        r"cost.+?60\.0|price.+?60\.0|60\.0.+?price|60\.0.+?cost",
+        "10\n10\n8\n30\n300\n",
+        r"(cost|price).+?(60|3300)|(60|3300).+?(price|cost)",
         "cost output label is missing or incorrect.")
 
 
