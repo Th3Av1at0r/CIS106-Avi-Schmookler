@@ -11,31 +11,36 @@ def get_hours_per_week():
     
     return hours_per_week
     
+    
 def get_hourly_rate():
     
     print("what is your hourly rate?")
     hourly_rate = float(input())
     
     return hourly_rate
+   
     
 def get_weekly_pay(hourly_rate, hours_per_week):
 
     weekly_pay = hourly_rate * hours_per_week
     
     return weekly_pay
+  
     
 def get_monthly_pay(yearly_pay):
     
     monthly_pay = yearly_pay / 12
     
     return monthly_pay
+  
     
 def get_yearly_pay(weekly_pay):
     
     yearly_pay = weekly_pay * 52
     
     return yearly_pay
-    
+
+
 def display_result(weekly_pay, monthly_pay, yearly_pay):
 
     print("your pay in a week is $" +
@@ -45,7 +50,8 @@ def display_result(weekly_pay, monthly_pay, yearly_pay):
                     " your pay in a year is $" +
                         str(yearly_pay))
 
-#main
+    
+# main
 def main():
     
     hourly_rate = get_hourly_rate()
@@ -54,5 +60,6 @@ def main():
     yearly_pay = get_yearly_pay(weekly_pay)
     monthly_pay = get_monthly_pay(yearly_pay)
     display_result(weekly_pay, monthly_pay, yearly_pay)
-    
+ 
+
 main()
