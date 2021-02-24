@@ -54,8 +54,8 @@ def display_result(weekly_pay, monthly_pay, yearly_pay):
 # main
 def main():
     
-    rate = get_rate()
     hours = get_hours()
+    rate = get_rate()
     weekly_pay = get_weekly_pay(rate, hours)
     yearly_pay = get_yearly_pay(weekly_pay)
     monthly_pay = get_monthly_pay(yearly_pay)
