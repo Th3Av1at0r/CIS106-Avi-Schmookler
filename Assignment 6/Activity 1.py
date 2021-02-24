@@ -40,9 +40,9 @@ def display_result(weekly_pay, monthly_pay, yearly_pay):
 
     print("your pay in a week is $" +
         str(weekly_pay) +
-            "your pay in a month is $" +
+            " your pay in a month is $" +
                 str(monthly_pay) +
-                    "your pay in a year is $" +
+                    " your pay in a year is $" +
                         str(yearly_pay))
 
 #main
