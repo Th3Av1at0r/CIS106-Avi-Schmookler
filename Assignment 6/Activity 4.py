@@ -7,9 +7,9 @@
 def display_result(parallellogram_area, triangle_area):
     
     print("Your area as a parallellogram is " +
-    str(parallellogram_area) +
-    "Your area as a triangle is" +   
-    str(triangle_area))
+        str(parallellogram_area) +
+            "Your area as a triangle is" +   
+                str(triangle_area))
     
     
 def get_base():
