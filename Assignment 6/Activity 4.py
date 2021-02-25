@@ -34,8 +34,10 @@ def get_triangle_area(parallellogram_area):
 def main():
     base = get_base()
     height = get_height()
+
     parallellogram_area = get_parallellogram_area(base, height)
     triangle_area = get_triangle_area(parallellogram_area)
+
     display_result(parallellogram_area, triangle_area)
 
 
