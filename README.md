@@ -23,3 +23,7 @@ This assignment was interesting, it felt as if I was doing earlier projects, the
 ## Assignment 6
 
 This assignment was very fun and interesting, we needed to do two of the older activities. I chose activities four and one. For activity one I had to again make a program where I asked for the rate of someone's pay and the hours they were working per week and it produced the person's pay before taxes in weeks months and years. Activity four was the one where I had do take the length and width and give the area for two different shapes. I chose the triangle and parallellogram again because it seemed easy. I have finally been able to code a program without looking at Flogorithm. I can use theese skills in the future because formatting is very important for being able to find out where your problems are in a code.
+
+## Assignment 7
+
+In this assignment I had to use if else statements while using functions. I made two programs, one where I took the age of the user and transfered it into months days hours or seconds depending on what the user wanted and the other one I did took the hours and rate of the user's job and calculates the pay while accounting for overtime. I made the first code foolproof with the help of one of my friends, Dillon, who tought me a bit more about tuples. I used them along with while statements to make the program idiot proof. I can use this to make future projects idiot proof, it was very helpful.
