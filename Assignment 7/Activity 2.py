@@ -78,7 +78,8 @@ def get_months_days_hours_seconds_result(months_days_hours_seconds):
         return "hours"
     elif months_days_hours_seconds == "S":
         return "seconds"
-    else: print("unknown variable")
+    else: 
+        print("unknown variable")
     
     
 def display_result(months_days_hours_seconds,
@@ -94,7 +95,7 @@ def main():
     years = get_years()
     months_days_hours_seconds = get_months_days_hours_seconds()
     months_days_hours_seconds_result = \
-    get_months_days_hours_seconds_result(months_days_hours_seconds)
+        get_months_days_hours_seconds_result(months_days_hours_seconds)
     if months_days_hours_seconds == "M":
         months = get_months(years)
         display_result(months, months_days_hours_seconds_result)
