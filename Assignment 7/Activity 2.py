@@ -78,9 +78,11 @@ def get_months_days_hours_seconds_result(months_days_hours_seconds):
         return "hours"
     elif months_days_hours_seconds == "S":
         return "seconds"
-
-
-def display_result(months_days_hours_seconds, months_days_hours_seconds_result):
+    else: print("unknown variable")
+    
+    
+def display_result(months_days_hours_seconds,
+                   months_days_hours_seconds_result):
     
     print("your age in " + str(months_days_hours_seconds_result) + " is " +
         str(months_days_hours_seconds))
@@ -91,7 +93,8 @@ def main():
     
     years = get_years()
     months_days_hours_seconds = get_months_days_hours_seconds()
-    months_days_hours_seconds_result = get_months_days_hours_seconds_result(months_days_hours_seconds)
+    months_days_hours_seconds_result = \
+    get_months_days_hours_seconds_result(months_days_hours_seconds)
     if months_days_hours_seconds == "M":
         months = get_months(years)
         display_result(months, months_days_hours_seconds_result)
@@ -104,6 +107,8 @@ def main():
     elif months_days_hours_seconds == "S":
         seconds = get_seconds(years)
         display_result(seconds, months_days_hours_seconds_result)
+    else:
+        print("that is not a valid input")
     
 
 main()
