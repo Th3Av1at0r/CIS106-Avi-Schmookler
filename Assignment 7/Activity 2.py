@@ -20,7 +20,7 @@ def get_years():
             continue
     
     
-def get_m_d_h_s():
+def get_months_days_hours_seconds():
      
     variable = 0
      
@@ -29,81 +29,81 @@ def get_m_d_h_s():
         print("do you want to know how old you are in (M)onths, " + 
         "(D)ays, (H)ours, or (S)econds?")
     
-        m_d_h_s = input()
+        months_days_hours_seconds = input().upper()
         
-        if m_d_h_s.upper() in ("M", "D", "H", "S"):
+        if months_days_hours_seconds in ("M", "D", "H", "S"):
         
-            return m_d_h_s.upper()
+            return months_days_hours_seconds
         
         else:
             print("that is not a valid input")
             continue
     
     
-def get_m(years):
+def get_months(years):
     
-    m = years * 12
+    months = years * 12
     
-    return m
-    
-    
-def get_d(years):
-    
-    d = years * 365
-    
-    return d
+    return months
     
     
-def get_h(years):
+def get_days(years):
     
-    h = years * 8760
+    days = years * 365
     
-    return h
+    return days
     
     
-def get_s(years):
+def get_hours(years):
     
-    s = years * 31536000
+    hours = years * 8760
     
-    return s
+    return hours
+    
+    
+def get_seconds(years):
+    
+    seconds = years * 31536000
+    
+    return seconds
 
 
-def get_m_d_h_s_result(m_d_h_s):
+def get_months_days_hours_seconds_result(months_days_hours_seconds):
     
-    if m_d_h_s == "M":
+    if months_days_hours_seconds == "M":
         return "months"
-    elif m_d_h_s == "D":
+    elif months_days_hours_seconds == "D":
         return "days"
-    elif m_d_h_s == "H":
+    elif months_days_hours_seconds == "H":
         return "hours"
-    elif m_d_h_s == "S":
+    elif months_days_hours_seconds == "S":
         return "seconds"
 
 
-def display_result(m_d_h_s, m_d_h_s_result):
+def display_result(months_days_hours_seconds, months_days_hours_seconds_result):
     
-    print("your age in " + str(m_d_h_s_result) + " is " +
-        str(m_d_h_s))
+    print("your age in " + str(months_days_hours_seconds_result) + " is " +
+        str(months_days_hours_seconds))
     
     
 # main
 def main():
     
     years = get_years()
-    m_d_h_s = get_m_d_h_s()
-    m_d_h_s_result = get_m_d_h_s_result(m_d_h_s)
-    if m_d_h_s == "M":
-        m = get_m(years)
-        display_result(m, m_d_h_s_result)
-    elif m_d_h_s == "D":
-        d = get_d(years)
-        display_result(d, m_d_h_s_result)
-    elif m_d_h_s == "H":
-        h = get_h(years)
-        display_result(h, m_d_h_s_result)
-    elif m_d_h_s == "S":
-        s = get_s(years)
-        display_result(s, m_d_h_s_result)
+    months_days_hours_seconds = get_months_days_hours_seconds()
+    months_days_hours_seconds_result = get_months_days_hours_seconds_result(months_days_hours_seconds)
+    if months_days_hours_seconds == "M":
+        months = get_months(years)
+        display_result(months, months_days_hours_seconds_result)
+    elif months_days_hours_seconds == "D":
+        days = get_days(years)
+        display_result(days, months_days_hours_seconds_result)
+    elif months_days_hours_seconds == "H":
+        hours = get_hours(years)
+        display_result(hours, months_days_hours_seconds_result)
+    elif months_days_hours_seconds == "S":
+        seconds = get_seconds(years)
+        display_result(seconds, months_days_hours_seconds_result)
     
 
 main()
