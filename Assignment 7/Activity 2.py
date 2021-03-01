@@ -5,7 +5,7 @@
 
 def get_years():
     
-    while True--True:
+    while True == True:
     
         print("how many years old are you?")
     
@@ -14,14 +14,16 @@ def get_years():
         if years.isdigit():
             return float(years)
         else: 
-            print ("that is not a valid input")
+            print("that is not a valid input")
+            continue
     
     
 def get_m_d_h_s():
+     
+    while True == True:
     
-    while True--True:
-    
-        print("do you want to know how old you are in (M)onths, (D)ays, (H)ours, or (S)econds?")
+        print("do you want to know how old you are in (M)onths," + 
+        "(D)ays, (H)ours, or (S)econds?")
     
         m_d_h_s = input()
         
@@ -30,7 +32,8 @@ def get_m_d_h_s():
             return m_d_h_s.upper()
         
         else:
-            print ("that is not a valid input")
+            print("that is not a valid input")
+            continue
     
     
 def get_m(years):
@@ -61,27 +64,42 @@ def get_s(years):
     return s
 
 
-def display_result(m_d_h_s):
+def get_m_d_h_s_result(m_d_h_s):
     
-    print("your age in your specified result is " +
+    if m_d_h_s == "M":
+        return "months"
+    elif m_d_h_s == "D":
+        return "days"
+    elif m_d_h_s == "H":
+        return "hours"
+    elif m_d_h_s == "S":
+        return "seconds"
+
+
+def display_result(m_d_h_s, m_d_h_s_result):
+    
+    print("your age in " + str(m_d_h_s_result) + " is " +
         str(m_d_h_s))
+    
     
 # main
 def main():
     
     years = get_years()
     m_d_h_s = get_m_d_h_s()
+    m_d_h_s_result = get_m_d_h_s_result(m_d_h_s)
     if m_d_h_s == "M":
         m = get_m(years)
-        display_result(m)
+        display_result(m, m_d_h_s_result)
     elif m_d_h_s == "D":
         d = get_d(years)
-        display_result(d)
+        display_result(d, m_d_h_s_result)
     elif m_d_h_s == "H":
         h = get_h(years)
-        display_result(h)
+        display_result(h, m_d_h_s_result)
     elif m_d_h_s == "S":
         s = get_s(years)
-        display_result(s)
+        display_result(s, m_d_h_s_result)
     
+
 main()
