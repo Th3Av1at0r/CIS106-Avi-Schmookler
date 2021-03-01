@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="aviel"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-03-01 10:58:27 AM"/>
+        <attribute name="created" value="YXZpZWw7REVTS1RPUC0wRkEwTjFGOzIwMjEtMDMtMDE7MTA6NDM6NTUgQU07Mjc5Ng=="/>
+        <attribute name="edited" value="YXZpZWw7REVTS1RPUC0wRkEwTjFGOzIwMjEtMDMtMDE7MTA6NTg6MjcgQU07MTsyOTA5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="hours" type="Real" array="False" size=""/>
+            <output expression="&quot;How many hours did you work?&quot;" newline="True"/>
+            <input variable="hours"/>
+            <declare name="rate" type="Real" array="False" size=""/>
+            <output expression="&quot;How much to you make per hour?&quot;" newline="True"/>
+            <input variable="rate"/>
+            <if expression="hours &gt; 40">
+                <then>
+                    <declare name="pay" type="Real" array="False" size=""/>
+                    <assign variable="pay" expression="(rate * 40)+((hours - 40) * (rate * 1.5))"/>
+                    <output expression="&quot;your getting paid $&quot;&amp;pay" newline="True"/>
+                </then>
+                <else>
+                    <declare name="pay" type="Real" array="False" size=""/>
+                    <assign variable="pay" expression="rate * hours"/>
+                    <output expression="&quot;your getting paid $&quot;&amp;pay" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
