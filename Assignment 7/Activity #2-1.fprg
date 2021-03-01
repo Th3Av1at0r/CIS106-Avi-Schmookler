@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="aviel"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-03-01 11:19:06 AM"/>
+        <attribute name="created" value="YXZpZWw7REVTS1RPUC0wRkEwTjFGOzIwMjEtMDMtMDE7MTE6MDM6MTAgQU07Mjc4NA=="/>
+        <attribute name="edited" value="YXZpZWw7REVTS1RPUC0wRkEwTjFGOzIwMjEtMDMtMDE7MTE6MTc6NTMgQU07NjthdmllbDtERVNLVE9QLTBGQTBOMUY7MjAyMS0wMy0wMTsxMDo0Mzo1NSBBTTtBY3Rpdml0eSAjMi0xLmZwcmc7NzM1Ng=="/>
+        <attribute name="edited" value="YXZpZWw7REVTS1RPUC0wRkEwTjFGOzIwMjEtMDMtMDE7MTE6MTk6MDYgQU07MTsyOTA0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="This program takes your hours worked and your rate of pay and produces your pay in the time given while calculating for overtime"/>
+            <declare name="hours" type="Real" array="False" size=""/>
+            <declare name="rate" type="Real" array="False" size=""/>
+            <declare name="pay" type="Real" array="False" size=""/>
+            <assign variable="hours" expression="gethours()"/>
+            <assign variable="rate" expression="getrate()"/>
+            <assign variable="pay" expression="getpay(hours,rate)"/>
+            <call expression="displayresult(pay)"/>
+        </body>
+    </function>
+    <function name="displayresult" type="None" variable="">
+        <parameters>
+            <parameter name="pay" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <output expression="&quot;your pay this time is $&quot;&amp;pay" newline="True"/>
+        </body>
+    </function>
+    <function name="gethours" type="Real" variable="hours">
+        <parameters/>
+        <body>
+            <declare name="hours" type="Real" array="False" size=""/>
+            <output expression="&quot;How many hours did you work?&quot;" newline="True"/>
+            <input variable="hours"/>
+        </body>
+    </function>
+    <function name="getpay" type="Real" variable="pay">
+        <parameters>
+            <parameter name="hours" type="Real" array="False"/>
+            <parameter name="rate" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="pay" type="Real" array="False" size=""/>
+            <if expression="hours &gt; 40">
+                <then>
+                    <assign variable="pay" expression="(rate * 40)+((hours - 40) * (rate * 1.5))"/>
+                </then>
+                <else>
+                    <assign variable="pay" expression="rate * hours"/>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="getrate" type="Real" variable="rate">
+        <parameters/>
+        <body>
+            <declare name="rate" type="Real" array="False" size=""/>
+            <output expression="&quot;How much to you make per hour?&quot;" newline="True"/>
+            <input variable="rate"/>
+        </body>
+    </function>
+</flowgorithm>
