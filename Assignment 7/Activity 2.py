@@ -5,7 +5,9 @@
 
 def get_years():
     
-    while True == True:
+    x = 0
+    
+    while x == 0:
     
         print("how many years old are you?")
     
@@ -20,7 +22,9 @@ def get_years():
     
 def get_m_d_h_s():
      
-    while True == True:
+    x = 0
+    
+    while x == 0:
     
         print("do you want to know how old you are in (M)onths," + 
         "(D)ays, (H)ours, or (S)econds?")
