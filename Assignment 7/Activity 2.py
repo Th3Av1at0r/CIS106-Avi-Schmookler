@@ -5,9 +5,9 @@
 
 def get_years():
     
-    x = 0
+    variable = 0
     
-    while x == 0:
+    while variable == 0:
     
         print("how many years old are you?")
     
@@ -22,16 +22,16 @@ def get_years():
     
 def get_m_d_h_s():
      
-    x = 0
+    variable = 0
      
-    while x == 0:
+    while variable == 0:
     
         print("do you want to know how old you are in (M)onths," + 
         "(D)ays, (H)ours, or (S)econds?")
     
         m_d_h_s = input()
         
-        if m_d_h_s.upper() in ("M", "D", "H", "S"):
+        if m_d_h_s.upper() in ("M","D","H","S"):
         
             return m_d_h_s.upper()
         
