@@ -19,6 +19,7 @@ def get_total(number_of_grades):
     
     return total 
     
+    
 def get_score():
     print("please input a score")
     score = float(input())
@@ -35,8 +36,11 @@ def get_average(total, number_of_grades):
 def display_result(average):
     print("the class average is " + str(average))
     
+    
 # main
-number_of_grades = get_number_of_grades()
-total = get_total(number_of_grades)
-average = get_average(total, number_of_grades)
-display_result(average)
+def main():
+    number_of_grades = get_number_of_grades()
+    total = get_total(number_of_grades)
+    average = get_average(total, number_of_grades)
+    display_result(average)
+main()
