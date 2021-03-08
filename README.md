@@ -27,3 +27,7 @@ This assignment was very fun and interesting, we needed to do two of the older a
 ## Assignment 7
 
 In this assignment I had to use if else statements while using functions. I made two programs, one where I took the age of the user and transfered it into months days hours or seconds depending on what the user wanted and the other one I did took the hours and rate of the user's job and calculates the pay while accounting for overtime. I made the first code foolproof with the help of one of my friends, Dillon, who tought me a bit more about tuples. I used them along with while statements to make the program idiot proof. I can use this to make future projects idiot proof, it was very helpful.
+
+## Assignment 8
+
+In this assignment I had to use while statements while using functions. I created two programs, one where I took the grades of a class with a number of students that could be input into the program and gave the class average in an output. for the second one I took a value and the number of expressions and output the number of expressions using the value, for example three expressions using the value one are 1 * 1 = 1, 1 * 2 = 2 and 1 * 3 = 3. my cousin in law helped me figure out my troubles using floats and strs and I was able to finish in just under three hours. I will be able to use while statements to create lists in the future.
