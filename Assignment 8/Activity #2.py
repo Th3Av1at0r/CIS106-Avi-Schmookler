@@ -43,4 +43,7 @@ def main():
     total = get_total(number_of_grades)
     average = get_average(total, number_of_grades)
     display_result(average)
+
+    
 main()
+
