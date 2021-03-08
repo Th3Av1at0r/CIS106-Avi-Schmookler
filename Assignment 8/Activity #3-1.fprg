@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="aviel"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-03-08 11:44:18 AM"/>
+        <attribute name="created" value="YXZpZWw7REVTS1RPUC0wRkEwTjFGOzIwMjEtMDMtMDg7MTE6MzM6MTUgQU07Mjc5OQ=="/>
+        <attribute name="edited" value="YXZpZWw7REVTS1RPUC0wRkEwTjFGOzIwMjEtMDMtMDg7MTE6Mzg6NDAgQU07NTthdmllbDtERVNLVE9QLTBGQTBOMUY7MjAyMS0wMy0wODsxMToxODo1NCBBTTtBY3Rpdml0eSAjMy0xLmZwcmc7NzM3MQ=="/>
+        <attribute name="edited" value="YXZpZWw7REVTS1RPUC0wRkEwTjFGOzIwMjEtMDMtMDg7MTE6NDQ6MTggQU07MTsyOTEy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="This program takes a value and a number of expressions and produces the number of expressions using the value"/>
+            <declare name="value" type="Integer" array="False" size=""/>
+            <declare name="expressions" type="Integer" array="False" size=""/>
+            <assign variable="value" expression="getvalue()"/>
+            <assign variable="expressions" expression="getexpressions()"/>
+            <call expression="displayresult(value, expressions)"/>
+        </body>
+    </function>
+    <function name="displayresult" type="None" variable="">
+        <parameters>
+            <parameter name="value" type="Integer" array="False"/>
+            <parameter name="expressions" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="incrament" type="Integer" array="False" size=""/>
+            <declare name="count" type="Integer" array="False" size=""/>
+            <declare name="solution" type="Integer" array="False" size=""/>
+            <assign variable="incrament" expression="1"/>
+            <assign variable="count" expression="1"/>
+            <while expression="count &lt;= expressions">
+                <assign variable="solution" expression="value * count"/>
+                <output expression="value&amp;&quot; * &quot;&amp;count&amp;&quot; = &quot;&amp;solution" newline="True"/>
+                <assign variable="count" expression="count + incrament"/>
+            </while>
+        </body>
+    </function>
+    <function name="getexpressions" type="Integer" variable="expressions">
+        <parameters/>
+        <body>
+            <declare name="expressions" type="Integer" array="False" size=""/>
+            <output expression="&quot;How many expressions?&quot;" newline="True"/>
+            <input variable="expressions"/>
+        </body>
+    </function>
+    <function name="getvalue" type="Integer" variable="value">
+        <parameters/>
+        <body>
+            <declare name="value" type="Integer" array="False" size=""/>
+            <output expression="&quot;what is your value?&quot;" newline="True"/>
+            <input variable="value"/>
+        </body>
+    </function>
+</flowgorithm>
