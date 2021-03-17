@@ -32,6 +32,6 @@ In this assignment I had to use if else statements while using functions. I made
 
 In this assignment I had to use while statements while using functions. I created two programs, one where I took the grades of a class with a number of students that could be input into the program and gave the class average in an output. for the second one I took a value and the number of expressions and output the number of expressions using the value, for example three expressions using the value one are 1 * 1 = 1, 1 * 2 = 2 and 1 * 3 = 3. my cousin in law helped me figure out my troubles using floats and strs and I was able to finish in just under three hours. I will be able to use while statements to create lists in the future.
 
-## Asignment 9
+## Assignment 9
 
 In this assignment I had to use do while statements while using functions. I created two programs, the first one I made took grades of a class and continues to add the grades together untill a negative number is given. after a negative number is given, the program calculates the average score for the class and presents it. The second program that I created was a guessing game, the user would think of a number between one and one hundered and the program would use Higher and lower values to guess the user's number. I can use the do while statements in the future to continue translating a paper untill it hits the end of the paper.
