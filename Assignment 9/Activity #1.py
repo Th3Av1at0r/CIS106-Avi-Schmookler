@@ -11,7 +11,7 @@ def get_total():
         score = get_score()
         new_score = old_score + score
         counter += 1
-        if not(score >= 1): break
+        if not(score >= 0): break
     average = get_average(new_score, score, counter)
     total = average
     
