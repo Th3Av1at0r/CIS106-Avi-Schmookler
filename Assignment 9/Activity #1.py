@@ -8,8 +8,7 @@ def get_total():
     new_score = 0
     while True:
         old_score = new_score
-        print("please enter a score")
-        score = float(input())
+        score = get_score()
         new_score = old_score + score
         counter += 1
         if not(score >= 1): break
@@ -27,6 +26,13 @@ def get_average(new_score, score, counter):
 
 def display_results(total):
     print("your class' average is " + str(total))
+
+
+def get_score():
+    print("please enter a score")
+    score = int(input())
+
+    return score
 
 
 def main():
