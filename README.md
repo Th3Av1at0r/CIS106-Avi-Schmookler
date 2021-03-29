@@ -35,3 +35,7 @@ In this assignment I had to use while statements while using functions. I create
 ## Assignment 9
 
 In this assignment I had to use do while statements while using functions. I created two programs, the first one I made took grades of a class and continues to add the grades together untill a negative number is given. after a negative number is given, the program calculates the average score for the class and presents it. The second program that I created was a guessing game, the user would think of a number between one and one hundered and the program would use Higher and lower values to guess the user's number. I can use the do while statements in the future to continue translating a paper untill it hits the end of the paper.
+
+## Assignment 10
+
+In this assignment I had to use nested loops while using functions, I created one program and edited another. For the one I edited I changed my previous activity 2 to have a statement where if the input wasn't "h", "l", or "e" the program would state that it is an invalid input. For the program that I created, I had to make a program that took the input of the start and finish of where to have a multiplication table start and end. The techniques that I used will be helpful in the futrue with ranges of numbers that can be asociated with variables being able to help me with heavier calculations.
