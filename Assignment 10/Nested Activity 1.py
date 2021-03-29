@@ -36,7 +36,7 @@ def get_if_line_1(start, end, length):
 def get_line_1(start, end, counter):
     for number in range(start, (end + 1)):
         print("\t", number, end="")
-    counter = 2
+    counter += 1
         
     return counter
 
@@ -49,6 +49,7 @@ def get_table(start, end, length, counter):
             for number_b in range(start, end + 1):
                 print("\t", number_a * number_b, end="")
             print("\n")
+        counter += 1
     else:
         print("something is broken.")
 
