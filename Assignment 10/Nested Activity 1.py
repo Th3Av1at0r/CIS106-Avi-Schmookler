@@ -45,7 +45,7 @@ def get_table(start, end, length, counter):
     if counter != length:
         print("\n")
         for number_a in range(start, end + 1):
-            print(number_a)
+            print(number_a, end="")
             for number_b in range(start, end + 1):
                 print("\t", number_a * number_b, end="")
             print("\n")
