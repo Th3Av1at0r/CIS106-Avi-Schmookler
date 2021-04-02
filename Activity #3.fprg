@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="aviel"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-04-02 03:13:21 PM"/>
+        <attribute name="created" value="YXZpZWw7REVTS1RPUC0wRkEwTjFGOzIwMjEtMDQtMDI7MDI6MzE6MDEgUE07MjgwMg=="/>
+        <attribute name="edited" value="YXZpZWw7REVTS1RPUC0wRkEwTjFGOzIwMjEtMDQtMDI7MDM6MDY6MDUgUE07MTthdmllbDtERVNLVE9QLTBGQTBOMUY7MjAyMS0wNC0wMjswMjozMTowMSBQTTs1Nzc4"/>
+        <attribute name="edited" value="YXZpZWw7REVTS1RPUC0wRkEwTjFGOzIwMjEtMDQtMDI7MDM6MTM6MjEgUE07MzsyOTE1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="This Program calculates Pi through the Nilakantha series"/>
+            <declare name="SeriesNumber" type="Integer" array="False" size=""/>
+            <declare name="FinalPi" type="Real" array="False" size=""/>
+            <assign variable="SeriesNumber" expression="GetSeriesNumber()"/>
+            <assign variable="FinalPi" expression="GetFinalPi(SeriesNumber)"/>
+            <call expression="DisplayResults(FinalPi)"/>
+        </body>
+    </function>
+    <function name="CalculateFirstPi" type="Real" variable="FirstPi">
+        <parameters>
+            <parameter name="OddOrEven" type="Integer" array="False"/>
+            <parameter name="FirstPi" type="Real" array="False"/>
+            <parameter name="Number" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <if expression="OddOrEven != 0">
+                <then>
+                    <assign variable="FirstPi" expression="FirstPi + ((4)/(Number * (Number+1) * (Number+2)))"/>
+                </then>
+                <else>
+                    <assign variable="FirstPi" expression="FirstPi - ((4)/(Number * (Number+1) * (Number+2)))"/>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="DisplayResults" type="None" variable="">
+        <parameters>
+            <parameter name="FinalPi" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <output expression="&quot;The final iteration of Pi for your number of runs is &quot;&amp;FinalPi" newline="True"/>
+        </body>
+    </function>
+    <function name="GetFinalPi" type="Real" variable="FinalPi">
+        <parameters>
+            <parameter name="SeriesNumber" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="FinalPi" type="Real" array="False" size=""/>
+            <declare name="count" type="Integer" array="False" size=""/>
+            <declare name="OddOrEven" type="Integer" array="False" size=""/>
+            <declare name="FirstPi" type="Real" array="False" size=""/>
+            <declare name="Number" type="Integer" array="False" size=""/>
+            <assign variable="count" expression="1"/>
+            <assign variable="Number" expression="2"/>
+            <assign variable="FirstPi" expression="3"/>
+            <while expression="count &lt;= SeriesNumber">
+                <assign variable="OddOrEven" expression="Count % 2"/>
+                <assign variable="FIrstPi" expression="CalculateFirstPi(OddOrEven, FirstPi, Number)"/>
+                <output expression="Count&amp;&quot; - &quot;&amp;FirstPi" newline="True"/>
+                <assign variable="Count" expression="Count + 1"/>
+                <assign variable="Number" expression="Number + 2"/>
+            </while>
+            <assign variable="FinalPi" expression="FirstPi"/>
+        </body>
+    </function>
+    <function name="GetSeriesNumber" type="Integer" variable="SeriesNumber">
+        <parameters/>
+        <body>
+            <declare name="SeriesNumber" type="Integer" array="False" size=""/>
+            <output expression="&quot;How many times do you want to run the series?&quot;" newline="True"/>
+            <input variable="SeriesNumber"/>
+        </body>
+    </function>
+</flowgorithm>
