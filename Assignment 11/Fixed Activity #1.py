@@ -11,8 +11,8 @@ def get_grades(number_of_grades):
     grades = list()
     print('Please enter the grades: \n')
     for number in range(int(number_of_grades)):
-        johnothan = input("grade:")
-        grades.append(int(johnothan))
+        grade_input = input("grade:")
+        grades.insert(int(grade_input))
     print('Your grades are: ', grades)
     
     return grades
