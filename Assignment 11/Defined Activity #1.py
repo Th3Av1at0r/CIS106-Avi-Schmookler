@@ -22,7 +22,8 @@ def get_month():
     
     import numpy as np
 
-    months_array = np.array(['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'])
+    months_array = np.array(['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+        'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'])
     month = (months_array[month_number])
     
     return month
@@ -97,14 +98,15 @@ def get_days(year, month):
 
     
 def display_result(year, month, days):
-    print("The number of days in " + str(month) + " durring the year of " + str(year) +
-        " was " + str(days))
+    print(str(month) + str(year) + " had " + str(days) + " days")
 
+    
 def main():
     while (1 == 1):
         year = get_year()
         month = get_month()
         days = get_days(year, month)
         display_result(year, month, days)
+    
     
 main()
