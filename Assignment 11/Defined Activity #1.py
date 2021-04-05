@@ -19,8 +19,9 @@ def get_month():
         print("That is not a valid input, exiting code.")
         exit()
 
-    months_array = list(['January', 'February', 'March', 'April', 'May', 'June',
-        'July', 'August', 'September', 'October', 'November', 'December'])
+    months_array = list(['January', 'February', 'March', 'April', 'May', 
+        'June', 'July', 'August', 'September', 'October',
+        'November', 'December'])
     month = (months_array[month_number])
     
     return month
@@ -34,15 +35,21 @@ def get_days(year, month):
         
     elif month == 'February':
         if ((year % 4) == 0):
-            days = 29
-            
-            return days
-            
-        else:
-            days = 28
-            
-            return days
-            
+            if ((year % 100) == 0):
+                if ((year % 400) == 0):
+                    days = 29
+                    
+                    return days
+                    
+                else:
+                    days = 28
+                    
+                    return days
+            else:
+                days = 29
+                    
+                return days
+    
     elif month == 'March':
         days = 31
         
