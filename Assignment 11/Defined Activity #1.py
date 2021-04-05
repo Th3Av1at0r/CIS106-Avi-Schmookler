@@ -15,7 +15,6 @@ def get_month():
     month_number = int(input("And what month in that year?\n"))
     month_number = (month_number - 1)
     
-        
     if (0 >= month_number <= 13):
         print("That is not a valid input, exiting code.")
         exit()
@@ -98,7 +97,7 @@ def get_days(year, month):
 
     
 def display_result(year, month, days):
-    print(str(month) + str(year) + " had " + str(days) + " days")
+    print(str(month) + " " + str(year) + " had " + str(days) + " days")
 
     
 def main():
