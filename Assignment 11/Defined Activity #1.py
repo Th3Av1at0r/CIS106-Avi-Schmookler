@@ -49,7 +49,11 @@ def get_days(year, month):
                 days = 29
                     
                 return days
-    
+        else:
+            days = 28
+                    
+            return days
+            
     elif month == 'March':
         days = 31
         
