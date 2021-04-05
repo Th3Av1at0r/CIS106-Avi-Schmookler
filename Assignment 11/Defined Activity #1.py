@@ -19,20 +19,20 @@ def get_month():
         print("That is not a valid input, exiting code.")
         exit()
 
-    months_array = list(['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
-        'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'])
+    months_array = list(['January', 'February', 'March', 'April', 'May', 'June',
+        'July', 'August', 'September', 'October', 'November', 'December'])
     month = (months_array[month_number])
     
     return month
 
 
 def get_days(year, month):
-    if month == 'Jan':
+    if month == 'January':
         days = 31
         
         return days
         
-    elif month == 'Feb':
+    elif month == 'February':
         if ((year % 4) == 0):
             days = 29
             
@@ -43,12 +43,12 @@ def get_days(year, month):
             
             return days
             
-    elif month == 'Mar':
+    elif month == 'March':
         days = 31
         
         return days
         
-    elif month == 'Apr':
+    elif month == 'April':
         days = 30
         
         return days
@@ -58,37 +58,37 @@ def get_days(year, month):
     
         return days
     
-    elif month == 'Jun':
+    elif month == 'June':
         days = 30
     
         return days
     
-    elif month == 'Jul':
+    elif month == 'July':
         days = 31
     
         return days
     
-    elif month == 'Aug':
+    elif month == 'August':
         days = 31
     
         return days
     
-    elif month == 'Sep':
+    elif month == 'September':
         days = 30
     
         return days
     
-    elif month == 'Oct':
+    elif month == 'October':
         days = 31
     
         return days
     
-    elif month == 'Nov':
+    elif month == 'November':
         days = 30
     
         return days
     
-    elif month == 'Dec':
+    elif month == 'December':
         days = 31
         
         return days
