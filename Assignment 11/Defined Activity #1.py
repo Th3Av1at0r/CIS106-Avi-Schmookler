@@ -15,14 +15,14 @@ def get_month():
     month_number = int(input("And what month in that year?\n"))
     month_number = (month_number - 1)
     
-    if (0 > month_number <= 13):
+    if (0 >= month_number or month_number > 12):
         print("That is not a valid input, exiting code.")
         exit()
 
-    months_array = list(['January', 'February', 'March', 'April', 'May', 
+    months_array = (['January', 'February', 'March', 'April', 'May', 
         'June', 'July', 'August', 'September', 'October',
         'November', 'December'])
-    month = (months_array[month_number])
+    month = months_array[month_number]
     
     return month
 
