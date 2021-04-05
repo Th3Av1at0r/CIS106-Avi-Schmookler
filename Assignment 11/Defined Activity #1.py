@@ -18,10 +18,8 @@ def get_month():
     if (0 >= month_number <= 13):
         print("That is not a valid input, exiting code.")
         exit()
-    
-    import numpy as np
 
-    months_array = np.array(['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+    months_array = list(['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
         'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'])
     month = (months_array[month_number])
     
@@ -101,7 +99,7 @@ def display_result(year, month, days):
 
     
 def main():
-    while (1 == 1):
+    while True:
         year = get_year()
         month = get_month()
         days = get_days(year, month)
