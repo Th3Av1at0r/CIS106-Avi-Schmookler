@@ -39,3 +39,7 @@ In this assignment I had to use do while statements while using functions. I cre
 ## Assignment 10
 
 In this assignment I had to use nested loops while using functions, I created one program and edited another. For the one I edited I changed my previous activity 2 to have a statement where if the input wasn't "h", "l", or "e" the program would state that it is an invalid input. For the program that I created, I had to make a program that took the input of the start and finish of where to have a multiplication table start and end. The techniques that I used will be helpful in the futrue with ranges of numbers that can be asociated with variables being able to help me with heavier calculations.
+
+## Assignment 11
+
+In this assignment I had to create two programs using arrays, I created one program that took the grades of students, put them into an array, then found the highest grade, the lowest grade, and the average of all of the grades from the one array. The other program that I created took the user's input of a month and a year and calculated the number of days in that month, and it calculated for leap years in where february has twenty nine days instead of the usual twenty eight. Arrays will be helpful in the future when creating lists that I need to use together.
