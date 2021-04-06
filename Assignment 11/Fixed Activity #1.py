@@ -8,11 +8,11 @@ def get_number_of_grades():
     
     
 def get_grades(number_of_grades):
-    grades = [] * int(number_of_grades)
+    grades = [None] * int(number_of_grades)
     print('Please enter the grades: \n')
     for number in range(int(number_of_grades)):
         grade_input = input("grade:")
-        grades += [int(grade_input)]
+        grades[number] = int(grade_input)
     print('Your grades are: ', grades)
     
     return grades
