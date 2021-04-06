@@ -15,7 +15,7 @@ def get_month():
     month_number = int(input("And what month in that year?\n"))
     month_number = (month_number - 1)
     
-    if (0 >= month_number or month_number > 12):
+    if (0 > month_number or month_number > 12):
         print("That is not a valid input, exiting code.")
         exit()
 
