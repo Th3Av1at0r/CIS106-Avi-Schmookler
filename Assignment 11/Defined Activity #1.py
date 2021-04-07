@@ -11,110 +11,71 @@ def get_year():
     return year
 
 
-def get_month():
+def get_month_number():
     month_number = int(input("And what month in that year?\n"))
     month_number = (month_number - 1)
     
-    if (0 > month_number or month_number > 12):
+    if (0 > month_number or month_number > 11):
         print("That is not a valid input, exiting code.")
         exit()
+    
+    return month_number
+    
 
+def get_months_array():
     months_array = (['January', 'February', 'March', 'April', 'May', 
         'June', 'July', 'August', 'September', 'October',
         'November', 'December'])
-    month = months_array[month_number]
     
-    return month
+    return months_array
+    
+    
+def get_month_name(month_number):
+    month_name = months_array[month_number]
+    
+    return month_name
 
 
-def get_days(year, month):
-    if month == 'January':
-        days = 31
-        
-        return days
-        
-    elif month == 'February':
-        if ((year % 4) == 0):
-            if ((year % 100) == 0):
-                if ((year % 400) == 0):
-                    days = 29
-                    
-                    return days
-                    
-                else:
-                    days = 28
-                    
-                    return days
+def get_days(year, month_number, months_array):
+    months_array[0] = 31
+    if ((year % 4) == 0):
+        if ((year % 100) == 0):
+            if ((year % 400) == 0):
+                months_array[1] = 29
             else:
-                days = 29
-                    
-                return days
+                months_array[1] = 28
         else:
-            days = 28
-                    
-            return days
-            
-    elif month == 'March':
-        days = 31
-        
-        return days
-        
-    elif month == 'April':
-        days = 30
-        
-        return days
-        
-    elif month == 'May':
-        days = 31
+            months_array[1] = 29
+    else:
+        months_array[1] = 28
+    months_array[2] = 31
+    months_array[3] = 30
+    months_array[4] = 31
+    months_array[5] = 30
+    months_array[6] = 31
+    months_array[7] = 31
+    months_array[8] = 30
+    months_array[9] = 31
+    months_array[10] = 30
+    months_array[11] = 31
     
-        return days
+    days = months_array[month_number]
     
-    elif month == 'June':
-        days = 30
-    
-        return days
-    
-    elif month == 'July':
-        days = 31
-    
-        return days
-    
-    elif month == 'August':
-        days = 31
-    
-        return days
-    
-    elif month == 'September':
-        days = 30
-    
-        return days
-    
-    elif month == 'October':
-        days = 31
-    
-        return days
-    
-    elif month == 'November':
-        days = 30
-    
-        return days
-    
-    elif month == 'December':
-        days = 31
-        
-        return days
+    return days
 
     
-def display_result(year, month, days):
-    print(str(month) + " " + str(year) + " had " + str(days) + " days")
+def display_result(year, month_name, days):
+    print(str(month_name) + " " + str(year) + " had " + str(days) + " days")
 
     
 def main():
     while True:
         year = get_year()
-        month = get_month()
-        days = get_days(year, month)
-        display_result(year, month, days)
+        month_number = get_month_number()
+        months_array = get_months_array
+        month_name = get_month_name(month_number)
+        days = get_days(year, month_number, months_array)
+        display_result(year, month_name, days)
     
     
 main()
