@@ -30,7 +30,7 @@ def get_months_array():
     return months_array
     
     
-def get_month_name(month_number):
+def get_month_name(month_number, months_array):
     month_name = months_array[month_number]
     
     return month_name
@@ -72,8 +72,8 @@ def main():
     while True:
         year = get_year()
         month_number = get_month_number()
-        months_array = get_months_array
-        month_name = get_month_name(month_number)
+        months_array = get_months_array()
+        month_name = get_month_name(month_number, months_array)
         days = get_days(year, month_number, months_array)
         display_result(year, month_name, days)
     
