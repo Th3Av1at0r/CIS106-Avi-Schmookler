@@ -22,7 +22,7 @@ def get_month_number():
     return month_number
     
 
-def get_months_array():
+def get_months_array(year):
     months_array = (['January', 'February', 'March', 'April', 'May', 
         'June', 'July', 'August', 'September', 'October',
         'November', 'December'])
@@ -72,7 +72,7 @@ def main():
     while True:
         year = get_year()
         month_number = get_month_number()
-        months_array = get_months_array()
+        months_array = get_months_array(year)
         month_name = get_month_name(month_number, months_array)
         days = get_days(year, month_number, months_array)
         display_result(year, month_name, days)
