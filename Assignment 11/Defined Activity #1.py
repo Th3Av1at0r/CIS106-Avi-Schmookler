@@ -37,7 +37,9 @@ def get_month_name(month_number, months_array):
 
 
 def get_days(year, month_number, months_array):
-    months_array[0] = 31
+    months_array = [31, 28, 31, 30, 31, 30,
+        31, 31, 30, 31, 30, 31]
+
     if ((year % 4) == 0):
         if ((year % 100) == 0):
             if ((year % 400) == 0):
@@ -48,16 +50,6 @@ def get_days(year, month_number, months_array):
             months_array[1] = 29
     else:
         months_array[1] = 28
-    months_array[2] = 31
-    months_array[3] = 30
-    months_array[4] = 31
-    months_array[5] = 30
-    months_array[6] = 31
-    months_array[7] = 31
-    months_array[8] = 30
-    months_array[9] = 31
-    months_array[10] = 30
-    months_array[11] = 31
     
     days = months_array[month_number]
     
