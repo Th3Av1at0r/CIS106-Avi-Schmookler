@@ -10,16 +10,16 @@ def calculate_guess():
     guesses = list()
     guesses.append(50)
     while True:
-        correct = getcorrect(guess)
+        correct = get_correct(guess)
         if correct == "h":
             lowest = guess
-            newnumber = getnewnumber(correct, highest, lowest, guess)
+            newnumber = get_new_number(correct, highest, lowest, guess)
             guess = newnumber
             guesses.append(guess)
         else:
             if correct == "l":
                 highest = guess
-                newnumber = getnewnumber(correct, highest, lowest, guess)
+                newnumber = get_new_number(correct, highest, lowest, guess)
                 guess = newnumber
                 guesses.append(guess)
             else:
@@ -27,7 +27,6 @@ def calculate_guess():
         count = count + 1
         if not(correct != "e"): break
 
-    
 
 def display_result(correct, count, guesses):
     if correct == "e":
