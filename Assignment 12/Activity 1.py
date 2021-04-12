@@ -5,13 +5,13 @@ def get_grades():
     grades = list()
     print('Please enter the grades of the class: \n')
     while True:
-        grade_input = input("grade:")
-        grades.append(int(grade_input))
-        if not(int(grade_input) >= 0):
-            grades.remove(int(grade_input))
+        grade_input = int(input("grade:"))
+        if grade_input < 0:
             break
-    print('Your grades are: ', grades)
-    
+
+        grades.append(int(grade_input))
+
+    print('Your grades are: ', grades)    
     return grades
     
 
@@ -44,8 +44,8 @@ def get_average_grade(grades):
     
 def display_results(highest_grade, lowest_grade, average_grade):
     print("for your class' grades the highest was " + str(highest_grade) +
-    " and your lowest grade was " + str(lowest_grade) + 
-    ". The class average was " + str(average_grade))
+        " and your lowest grade was " + str(lowest_grade) + 
+        ". The class average was " + str(average_grade))
     
     
 def main():

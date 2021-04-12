@@ -2,29 +2,23 @@
 # or lower based on the user's input untill it is equal to the user's number
 
 def calculate_guess():
-    guess = 50
     highest = 100
     lowest = 0
-    correct = "ne"
-    count = 1
-    guesses = list()
-    guesses.append(50)
+    count = 0
+    guesses = []
     while True:
+        newnumber = get_new_number(highest, lowest)
+        guess = newnumber
+        guesses.append(guess)
+        count = count + 1
+
         correct = get_correct(guess)
         if correct == "h":
-            lowest = guess
-            newnumber = get_new_number(correct, highest, lowest, guess)
-            guess = newnumber
-            guesses.append(guess)
+            lowest = guess + 1
+        elif correct == "l":
+            highest = guess - 1
         else:
-            if correct == "l":
-                highest = guess
-                newnumber = get_new_number(correct, highest, lowest, guess)
-                guess = newnumber
-                guesses.append(guess)
-            else:
-                display_result(correct, count, guesses)
-        count = count + 1
+            display_result(correct, count, guesses)
         if not(correct != "e"): 
             break
 
@@ -45,12 +39,8 @@ def get_correct(guess):
     return correct
     
     
-def get_new_number(correct, highest, lowest, guess):
-    if correct == "h":
-        newnumber = guess + int(float(highest - lowest) / 2)
-    else:
-        newnumber = guess - int(float(highest - lowest) / 2)
-    
+def get_new_number(highest, lowest):
+    newnumber = int(float(highest + lowest) / 2)
     return newnumber
     
     
