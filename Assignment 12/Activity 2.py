@@ -23,13 +23,13 @@ def calculate_guess():
                 guess = newnumber
                 guesses.append(guess)
             else:
-                finish(correct, count, guesses)
+                display_result(correct, count, guesses)
         count = count + 1
         if not(correct != "e"): break
 
     
 
-def finish(correct, count, guesses):
+def display_result(correct, count, guesses):
     if correct == "e":
         print("Yay that was the correct number!")
         print("And it only took " + str(count) + " guesses!")
@@ -38,14 +38,14 @@ def finish(correct, count, guesses):
         print("That is not a valid input")
         
         
-def getcorrect(guess):
+def get_correct(guess):
     print("Is it (h)igher, (l)ower, or (e)qual to " + str(guess) + " ?")
     correct = input()
     
     return correct
     
     
-def getnewnumber(correct, highest, lowest, guess):
+def get_new_number(correct, highest, lowest, guess):
     if correct == "h":
         newnumber = guess + int(float(highest - lowest) / 2)
     else:
