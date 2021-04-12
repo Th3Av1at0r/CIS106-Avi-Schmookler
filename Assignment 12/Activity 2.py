@@ -25,7 +25,8 @@ def calculate_guess():
             else:
                 display_result(correct, count, guesses)
         count = count + 1
-        if not(correct != "e"): break
+        if not(correct != "e"): 
+            break
 
 
 def display_result(correct, count, guesses):
