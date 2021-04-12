@@ -43,3 +43,7 @@ In this assignment I had to use nested loops while using functions, I created on
 ## Assignment 11
 
 In this assignment I had to create two programs using arrays, I created one program that took the grades of students, put them into an array, then found the highest grade, the lowest grade, and the average of all of the grades from the one array. The other program that I created took the user's input of a month and a year and calculated the number of days in that month, and it calculated for leap years in where February has twenty nine days instead of the usual twenty eight. Arrays will be helpful in the future when creating lists that I need to use together.
+
+## Assignment 12
+
+In this assignment I had to create two programs using arrays, I created one program that took the grades of students, put them into an array, then found the highest grade, the lowest grade, and the average of all of the grades from the one array. The second program that I created was a guessing game, the user would think of a number between one and one hundered and the program would use Higher and lower values to guess the user's number. I was able to do this quickly because I accidentally did the first code last week. I can use functions such as append and len aloth when needing to create new lists and find information from them. 
