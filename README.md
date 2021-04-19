@@ -50,4 +50,4 @@ In this assignment I had to create two programs using arrays, I created one prog
 
 ## Assignment 13
 
-In this assignment I had to create two programs that edited arrays throughout them, I created one program where I took the first and last name of the user and formatted it in "Lastname, first initial." The second program I created took any list seperated by commas and spaces and turned it into a list of elements that I then listed on new lines after every element. Theese skills such as Length and indexing will be helpful when editing strings and lists in the future. 
+In this assignment I had to create two programs that edited arrays throughout them, I created one program where I took the first and last name of the user and formatted it in "Lastname, first initial." The second program I created took any list seperated by commas and spaces and turned it into a list of elements that I then listed on new lines after every element. Theese skills such as Length and indexing will be helpful when editing strings and lists in the future. These techniques can, for example, be used when transfering data from a certain document into a vertical list.
