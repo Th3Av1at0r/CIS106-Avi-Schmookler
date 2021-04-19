@@ -13,7 +13,7 @@ def get_name(full_name):
         print("That is not a valid input, exiting code")
         exit()
     else:
-        display_result(name)
+        return name
 
 
 def display_result(name):
@@ -23,7 +23,7 @@ def display_result(name):
     
 def main():
     full_name = get_full_name()
-    get_name(full_name)
-    
+    name = get_name(full_name)
+    display_result(name)
     
 main()
