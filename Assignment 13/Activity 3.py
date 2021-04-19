@@ -8,15 +8,14 @@ def get_values():
     
     
 def get_final_values(values):
-    seperate_values = values.replace(",", " ")
-    final_values = seperate_values.split()
+    final_values = values.split(",")
     
     return final_values
     
     
 def display_result(final_values):
     for elem in final_values:
-        print(elem)
+        print(elem.strip())
     
     
 def main():
