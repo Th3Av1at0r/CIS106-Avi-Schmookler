@@ -33,4 +33,5 @@ def main():
     first_initial = get_first_initial(name)
     display_result(name, first_initial)
     
+    
 main()
