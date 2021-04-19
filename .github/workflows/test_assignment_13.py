@@ -224,7 +224,7 @@ def test_assignment_13_activity_3_output():
         "Activity 3",
         "",
         "  this  ,  is  ,  another  ,  test  \n",
-        "this\nis\na\ntest",
+        "this\nis\nanother\ntest",
         "Output is incorrect. Expecting:\nthis\nis\nanother\ntest")
 
 
