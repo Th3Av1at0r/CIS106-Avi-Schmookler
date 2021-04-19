@@ -16,7 +16,13 @@ def get_name(full_name):
         return name
 
 
-def display_result(name):
+def get_first_initial(name):
+    first_initial = name[0]
+    
+    return first_initial
+
+
+def display_result(name, first_initial):
     first_initial = name[0]
     print(name[1] + ", " + first_initial[0] + ".")
     
@@ -24,6 +30,7 @@ def display_result(name):
 def main():
     full_name = get_full_name()
     name = get_name(full_name)
-    display_result(name)
+    first_initial = get_first_initial(name)
+    display_result(name, first_initial)
     
 main()
