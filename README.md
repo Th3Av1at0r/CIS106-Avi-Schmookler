@@ -47,3 +47,7 @@ In this assignment I had to create two programs using arrays, I created one prog
 ## Assignment 12
 
 In this assignment I had to create two programs using arrays, I created one program that took the grades of students, put them into an array, then found the highest grade, the lowest grade, and the average of all of the grades from the one array. The second program that I created was a guessing game, the user would think of a number between one and one hundered and the program would use Higher and lower values to guess the user's number. I was able to do this quickly because I accidentally did the first code last week. I can use functions such as append and len alot when needing to create new lists and find information from them. 
+
+## Assignment 13
+
+In this assignment I had to create two programs that edited arrays throughout them, I created one program where I took the first and last name of the user and formatted it in "Lastname, first initial." The second program I created took any list seperated by commas and spaces and turned it into a list of elements that I then listed on new lines after every element. Theese skills such as Length and indexing will be helpful when editing strings and lists in the future. 
