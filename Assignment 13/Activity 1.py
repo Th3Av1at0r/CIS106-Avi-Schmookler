@@ -3,8 +3,8 @@
 
 def get_full_name():
     full_name = input("what is your first and last name?\n")
-    get_name(full_name)
     
+    return full_name
     
     
 def get_name(full_name):
@@ -18,10 +18,12 @@ def get_name(full_name):
 
 def display_result(name):
     first_initial = name[0]
-    print(name[1]+ ", " + first_initial[0] + ".")
+    print(name[1] + ", " + first_initial[0] + ".")
     
     
 def main():
-    get_full_name()
+    full_name = get_full_name()
+    get_name(full_name)
+    
     
 main()
