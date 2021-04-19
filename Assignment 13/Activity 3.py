@@ -2,7 +2,7 @@
 # and prints them on seperate lines
 
 def get_values():
-    values = input("Please enter values seperated by commas.\n")
+    values = input("Please enter values separated by commas.\n")
     
     return values
     
