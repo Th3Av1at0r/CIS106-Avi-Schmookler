@@ -19,6 +19,7 @@ def get_scores_lst(scores_file):
 
 def get_average_score(scores_lst):    
     average_score = (sum(scores_lst) / len(scores_lst))
+    average_score = format(average_score, '.2f')
     
     return average_score
     
