@@ -1,3 +1,7 @@
+# this program takes grades from a .txt file and takes the average,
+# the highest, and the lowest and presents them
+
+
 def get_scores_file():
     scores_file = open("scores.txt", "r")
     next(scores_file)
@@ -34,7 +38,6 @@ def get_lowest_score(scores_lst):
     lowest_score = min(scores_lst)
     
     return lowest_score
-    
     
     
 def display_result(average_score, highest_score, lowest_score, scores_lst):
