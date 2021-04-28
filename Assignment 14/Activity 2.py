@@ -14,7 +14,7 @@ def get_scores_file():
             next(scores_file)
         
     except IOError:
-        print("File not accessible")
+        print("Error, file not accessible")
         exit()
     
     return scores_file
@@ -26,9 +26,13 @@ def get_scores_lst(scores_file):
         if (",") in line:
             lne_splt = line.split(",")
             lne_1 = lne_splt[1]
-            lne_strp = lne_1.strip("\n")
-            lne_intr = int(lne_strp)
-            scores_lst.append(lne_intr)
+            if lne_1.isnumeric() == True: 
+                lne_strp = lne_1.strip("\n")
+                lne_intr = int(lne_strp)
+                scores_lst.append(lne_intr)
+            else:
+                print("There was an error reading the file, exiting code.")
+                exit()
         else:
             print("There was an error reading the file, exiting code.")
             exit()
