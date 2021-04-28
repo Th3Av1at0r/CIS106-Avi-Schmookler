@@ -31,10 +31,12 @@ def get_scores_lst(scores_file):
                 lne_intr = int(lne_strp)
                 scores_lst.append(lne_intr)
             else:
-                print("There was an error reading the file, exiting code.")
+                print("There was an error reading the file " +
+                        "(missing or bad data), exiting code.")
                 exit()
         else:
-            print("There was an error reading the file, exiting code.")
+            print("There was an error reading the file " +
+                    "(missing or bad data), exiting code.")
             exit()
     
     return scores_lst
