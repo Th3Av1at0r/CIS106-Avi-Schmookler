@@ -15,6 +15,7 @@ def get_scores_file():
         
     except IOError:
         print("File not accessible")
+        exit()
     
     return scores_file
     
@@ -29,15 +30,19 @@ def get_scores_lst(scores_file):
             lne_intr = int(lne_strp)
             scores_lst.append(lne_intr)
         else:
-            print("The file is formatted incorrectly, exiting code.")
+            print("There was an error reading the file, exiting code.")
             exit()
     
     return scores_lst
     
 
-def get_average_score(scores_lst):    
-    average_score = (sum(scores_lst) / len(scores_lst))
-    average_score = format(average_score, '.2f')
+def get_average_score(scores_lst):
+    if len(scores_lst) != 0
+        average_score = (sum(scores_lst) / len(scores_lst))
+        average_score = format(average_score, '.2f')
+    else:
+        print("There was an error reading the file, exiting code.")
+        exit()
     
     return average_score
     
