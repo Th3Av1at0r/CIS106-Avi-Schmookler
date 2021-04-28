@@ -3,9 +3,18 @@
 
 
 def get_scores_file():
-    
-    scores_file = open("scores.txt", "r")
-    next(scores_file)
+    try:
+        import os
+        scores_file = open("scores.txt", "r")
+        filesize = os.path.getsize("scores.txt")
+        if filesize == 0:
+            print("The file is empty, exiting code")
+            exit()
+        else:
+            next(scores_file)
+        
+    except IOError:
+        print("File not accessible")
     
     return scores_file
     
