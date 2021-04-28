@@ -26,8 +26,8 @@ def get_scores_lst(scores_file):
         if (",") in line:
             lne_splt = line.split(",")
             lne_1 = lne_splt[1]
-            if lne_1.isnumeric() == True: 
-                lne_strp = lne_1.strip("\n")
+            lne_strp = lne_1.strip("\n")
+            if lne_strp.isnumeric() is True: 
                 lne_intr = int(lne_strp)
                 scores_lst.append(lne_intr)
             else:
