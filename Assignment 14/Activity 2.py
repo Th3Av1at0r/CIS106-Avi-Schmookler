@@ -2,11 +2,11 @@
 # the highest, and the lowest and presents them
 
 
-def get_scores_file():
+def get_scores_file(filename):
     try:
         import os
-        scores_file = open("scores.txt", "r")
-        filesize = os.path.getsize("scores.txt")
+        scores_file = open(filename, "r")
+        filesize = os.path.getsize(filename)
         if filesize == 0:
             print("The file is empty, exiting code")
             exit()
@@ -72,7 +72,8 @@ def display_result(average_score, highest_score, lowest_score, scores_lst):
     
 
 def main():
-    scores_file = get_scores_file()
+    filename = "scores.txt"
+    scores_file = get_scores_file(filename)
     scores_lst = get_scores_lst(scores_file)
     average_score = get_average_score(scores_lst)
     highest_score = get_highest_score(scores_lst)
