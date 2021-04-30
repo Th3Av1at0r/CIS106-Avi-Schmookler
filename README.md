@@ -14,7 +14,7 @@ To be honest I didn't learn much if anything from this assignment considering th
 
 ## Assignment 4
 
-This assignment was extremely fun to do, I finally got to start to code again and it felt amazing being able to type out simple code again. This feeling is my favorite thing in the world. I did activities 3 and four for assignment 4 it was pretty simple to do and didn't take much time, however, the import of pi was slightly confusing considering that google wanted me to use the term insert so it was a bit confusing. I was able to use Flogorithm to remember the basics of print and insert and such, however, while doing activity 4 I didn't use it much if at all.
+This assignment was extremely fun to do, I finally got to start to code again and it felt amazing being able to type out simple code again. This feeling is my favorite thing in the world. I did activities 3 and four for assignment 4 it was pretty simple to do and didn't take much time, however, the import of pi was slightly confusing considering that google wanted me to use the term insert so it was a bit confusing. I was able to use Flowgorithm to remember the basics of print and insert and such, however, while doing activity 4 I didn't use it much if at all.
 
 ## Assignment 5
 
@@ -22,7 +22,7 @@ This assignment was interesting, it felt as if I was doing earlier projects, the
 
 ## Assignment 6
 
-This assignment was very fun and interesting, we needed to do two of the older activities. I chose activities four and one. For activity one I had to again make a program where I asked for the rate of someone's pay and the hours they were working per week and it produced the person's pay before taxes in weeks months and years. Activity four was the one where I had to take the length and width and give the area for two different shapes. I chose the triangle and parallelogram again because it seemed easy. I have finally been able to code a program without looking at Flogorithm. I can use these skills in the future because the formatting is very important for being able to find out where your problems are in a code.
+This assignment was very fun and interesting, we needed to do two of the older activities. I chose activities four and one. For activity one I had to again make a program where I asked for the rate of someone's pay and the hours they were working per week and it produced the person's pay before taxes in weeks months and years. Activity four was the one where I had to take the length and width and give the area for two different shapes. I chose the triangle and parallelogram again because it seemed easy. I have finally been able to code a program without looking at Flowgorithm. I can use these skills in the future because the formatting is very important for being able to find out where your problems are in a code.
 
 ## Assignment 7
 
