@@ -1,9 +1,12 @@
 # This program takes information from a file containing a catalogue of CDs 
 # and prints the menu, number of items and average price
 
+import xml.etree.ElementTree as ET
+import os
+
+
 def get_catalogue(filename):
     try:
-        import os
         catalogue = open(filename, "r")
         filesize = os.path.getsize(filename)
         if filesize == 0:
@@ -17,7 +20,6 @@ def get_catalogue(filename):
 
 def get_title_list(catalogue):
     title_list = []
-    import xml.etree.ElementTree as ET
     information_file = ET.fromstring(catalogue)
     title_list.append(catalogue.find('TITLE').text)
     
