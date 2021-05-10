@@ -7,8 +7,8 @@ import os
 
 def get_catalogue(filename):
     try:
-        with open(filename, 'r') as fle:
-            catalogue = fle.read()
+        with open(filename, 'r') as open_file:
+            catalogue = open_file.read()
         filesize = os.path.getsize(filename)
         if filesize == 0:
             print("The file is empty, exiting code")
@@ -22,8 +22,7 @@ def get_catalogue(filename):
 def get_title_list(catalogue):
     title_list = []
     information_file = ET.fromstring(catalogue)
-    title_list.append(information_file.find('TITLE').text)
-    
+    information_file.findall('CATALOGUE/CD/TITLE').text
 
     return title_list
 
@@ -38,7 +37,6 @@ def get_title_list(catalogue):
 
 def main():
     filename = "cd_catalog.xml"
-    
     catalogue = get_catalogue(filename)
     title_list = get_title_list(catalogue)
     print(title_list)
