@@ -1,4 +1,4 @@
-# This program takes information from a file containing a catalogue of CDs 
+ This program takes information from a file containing a catalogue of CDs 
 # and prints the menu, number of items and average price
 
 def get_catalogue(filename):
@@ -9,8 +9,11 @@ def get_catalogue(filename):
         if filesize == 0:
             print("The file is empty, exiting code")
             exit()
-    
-    return catalogue
+        else:
+            
+            return catalogue
+    except:
+        print("There was an error reading the file.")
 
 def get_title_list(catalogue):
     title_list = []
@@ -32,13 +35,12 @@ def get_title_list(catalogue):
 def main():
     filename = "cd_catalog.xml"
     import xml.etree.ElementTree as ET
-    information_file = get_information_file(filename)
-    title_list = get_title_list(information_file)
+    catalogue = get_catalogue(filename)
+    title_list = get_title_list(catalogue)
     print(title_list)
     
     
     
     
     
-main()    
-    
+main() 
