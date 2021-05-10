@@ -58,7 +58,8 @@ def get_price_list(catalog):
     
 def get_year_list(catalog):
     information_file = ET.fromstring(catalog)
-    year_list = [element.text for element in information_file.findall('CD/YEAR')]
+    year_list = [element.text for element in 
+    information_file.findall('CD/YEAR')]
     
     return year_list
 
@@ -75,8 +76,8 @@ def display_results(title_list, artist_list, country_list, company_list,
 year_list, price_list, average_price):
     counter = 0
     while (counter < len(title_list)):
-        print(counter + 1, ": " + title_list[counter] + " - " + 
-        artist_list[counter] + " - " +country_list[counter] + " - " + 
+        print(title_list[counter] + " - " + 
+        artist_list[counter] + " - " + country_list[counter] + " - " + 
         company_list[counter] + " - $" +
         price_list[counter] + " - " + year_list[counter])
         counter += 1
@@ -98,6 +99,4 @@ def main():
     year_list, price_list, average_price)
     
     
-main()    
-        
-        
+main()
