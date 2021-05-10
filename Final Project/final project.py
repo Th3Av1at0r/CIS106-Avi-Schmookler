@@ -7,7 +7,8 @@ import os
 
 def get_catalogue(filename):
     try:
-        catalogue = open(filename, "r")
+        with open(filename, 'r') as fle:
+            catalogue = fle.read()
         filesize = os.path.getsize(filename)
         if filesize == 0:
             print("The file is empty, exiting code")
@@ -21,7 +22,7 @@ def get_catalogue(filename):
 def get_title_list(catalogue):
     title_list = []
     information_file = ET.fromstring(catalogue)
-    title_list.append(catalogue.find('TITLE').text)
+    title_list.append(information_file.find('TITLE').text)
     
 
     return title_list
@@ -47,4 +48,3 @@ def main():
     
     
 main()    
-    
