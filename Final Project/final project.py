@@ -78,7 +78,6 @@ year_list, price_list, average_price):
     while (counter < len(title_list)):
         print(title_list[counter] + " - " + 
         artist_list[counter] + " - " + country_list[counter] + " - " + 
-        company_list[counter] + " - $" +
         price_list[counter] + " - " + year_list[counter])
         counter += 1
     print("There were " + str(len(title_list)) + 
