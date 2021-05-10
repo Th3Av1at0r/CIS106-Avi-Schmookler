@@ -76,7 +76,7 @@ def get_company_list(information_file):
 
 
 def main():
-    filename = "XmlTxtFile.xml"
+    filename = "cd_catalog.xml"
     information_file = get_information_file(filename)
     title_list = get_title_list(information_file)
     artist_list = get_artist_list(information_file)
