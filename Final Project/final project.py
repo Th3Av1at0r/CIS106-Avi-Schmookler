@@ -1,4 +1,4 @@
- This program takes information from a file containing a catalogue of CDs 
+# This program takes information from a file containing a catalogue of CDs 
 # and prints the menu, number of items and average price
 
 def get_catalogue(filename):
