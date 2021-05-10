@@ -17,6 +17,7 @@ def get_catalogue(filename):
 
 def get_title_list(catalogue):
     title_list = []
+    import xml.etree.ElementTree as ET
     information_file = ET.fromstring(catalogue)
     title_list.append(catalogue.find('TITLE').text)
     
@@ -34,7 +35,7 @@ def get_title_list(catalogue):
 
 def main():
     filename = "cd_catalog.xml"
-    import xml.etree.ElementTree as ET
+    
     catalogue = get_catalogue(filename)
     title_list = get_title_list(catalogue)
     print(title_list)
@@ -43,4 +44,5 @@ def main():
     
     
     
-main() 
+main()    
+    
