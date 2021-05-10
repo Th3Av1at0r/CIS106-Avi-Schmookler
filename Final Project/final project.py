@@ -51,13 +51,14 @@ def get_price_list(catalog):
     
 def get_year_list(catalog):
     information_file = ET.fromstring(catalog)
-    year_list = [el.text for el in information_file.findall('CD/YEAR')]
+    year_list = [element.text for element in information_file.findall('CD/YEAR')]
     
     return year_list
 
 def get_average_price(price_list):
+    price_list = [float(number) for number in price_list]
     average_price = (sum(price_list) / len(price_list))
-    print (average_price)
+    average_price = format(average_price, '.2f')
     
     return average_price
 
