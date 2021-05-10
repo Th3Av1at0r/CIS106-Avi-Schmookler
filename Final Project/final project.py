@@ -5,11 +5,11 @@ import xml.etree.ElementTree as ET
 import os
 
 
-def get_catalogue(filename):
+def get_catalogue(file_name):
     try:
-        with open(filename, 'r') as open_file:
+        with open(file_name, 'r') as open_file:
             catalogue = open_file.read()
-        filesize = os.path.getsize(filename)
+        filesize = os.path.getsize(file_name)
         if filesize == 0:
             print("The file is empty, exiting code")
             exit()
@@ -21,8 +21,9 @@ def get_catalogue(filename):
 
 def get_title_list(catalogue):
     title_list = []
-    information_file = ET.fromstring(catalogue)
-    information_file.findall('CATALOGUE/CD/TITLE').text
+    print(catalogue)
+    information_file = ET.parse(catalogue)
+    title_list = information_file.findall('CATALOGUE/CD/TITLE').text
 
     return title_list
 
@@ -36,10 +37,9 @@ def get_title_list(catalogue):
 
 
 def main():
-    filename = "cd_catalog.xml"
-    catalogue = get_catalogue(filename)
+    file_name = "cd_catalog.xml"
+    catalogue = get_catalogue(file_name)
     title_list = get_title_list(catalogue)
-    print(title_list)
     
     
     
