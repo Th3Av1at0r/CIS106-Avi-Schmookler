@@ -105,7 +105,7 @@ def get_average_price(price_list):
 
 def display_results(title_list, artist_list, country_list, company_list, 
 year_list, price_list, average_price):
-    try
+    try:
         counter = 0
         while (counter < len(title_list)):
             print(title_list[counter] + " - " + 
