@@ -92,10 +92,14 @@ def get_year_list(catalog):
 
 
 def get_average_price(price_list):
-    price_list = [float(number) for number in price_list]
-    average_price = (sum(price_list) / len(price_list))
-    average_price = format(average_price, '.2f')
-    
+    try:
+        price_list = [float(number) for number in price_list]
+        average_price = (sum(price_list) / len(price_list))
+        average_price = format(average_price, '.2f')
+    except:
+        print("There was an error reading the file.")
+        exit()
+        
     return average_price
 
 
