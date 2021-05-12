@@ -1,5 +1,6 @@
 # This program takes information from a file containing a catalog of CDs 
 # and prints the menu, number of items and average price
+# tips on ElementTree given by Jess Elis
 
 import xml.etree.ElementTree as ET
 import os
@@ -22,46 +23,70 @@ def get_catalog(file_name):
 
 
 def get_title_list(catalog):
-    information_file = ET.fromstring(catalog)
-    title_list = [el.text for el in information_file.findall('CD/TITLE')]
+    try:
+        information_file = ET.fromstring(catalog)
+        title_list = [el.text for el in information_file.findall('CD/TITLE')]
     
     return title_list
-
+    except:
+        print("There was an error reading the file.")
+        exit()
+    
 
 def get_artist_list(catalog):
-    information_file = ET.fromstring(catalog)
-    artist_list = [el.text for el in information_file.findall('CD/ARTIST')]
-
+    try:
+        information_file = ET.fromstring(catalog)
+        artist_list = [el.text for el in information_file.findall('CD/ARTIST')]
+    
     return artist_list
+    except:
+        print("There was an error reading the file.")
+        exit()
 
 
 def get_country_list(catalog):
-    information_file = ET.fromstring(catalog)
-    country_list = [el.text for el in information_file.findall('CD/COUNTRY')]
+    try:
+        information_file = ET.fromstring(catalog)
+        country_list = [el.text for el in information_file.findall('CD/COUNTRY')]
     
     return country_list
+    except:
+        print("There was an error reading the file.")
+        exit()
 
     
 def get_company_list(catalog):
-    information_file = ET.fromstring(catalog)
-    company_list = [el.text for el in information_file.findall('CD/COMPANY')]
+    try:
+        information_file = ET.fromstring(catalog)
+        company_list = [el.text for el in information_file.findall('CD/COMPANY')]
     
     return company_list
+    except:
+        print("There was an error reading the file.")
+        exit()
 
 
 def get_price_list(catalog):
-    information_file = ET.fromstring(catalog)
-    price_list = [el.text for el in information_file.findall('CD/PRICE')]
+    try:
+        information_file = ET.fromstring(catalog)
+        price_list = [el.text for el in information_file.findall('CD/PRICE')]
     
     return price_list
+    except:
+        print("There was an error reading the file.")
+        exit()
 
     
 def get_year_list(catalog):
-    information_file = ET.fromstring(catalog)
-    year_list = [element.text for element in 
-    information_file.findall('CD/YEAR')]
+    try:
+        information_file = ET.fromstring(catalog)
+        year_list = [element.text for element in 
+        information_file.findall('CD/YEAR')]
     
     return year_list
+    except:
+        print("There was an error reading the file.")
+        exit()
 
 
 def get_average_price(price_list):
