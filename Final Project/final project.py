@@ -36,11 +36,11 @@ def get_processed_list(catalog, find_object):
 
 def get_average_price(price_list):
     try:
-    price_sum = 0
-    for element in list(price_list):
-        price_sum = price_sum + float(element)
-    average_price = (price_sum / len(price_list))
-    average_price = format(average_price, '.2f')
+        price_sum = 0
+        for element in list(price_list):
+            price_sum = price_sum + float(element)
+        average_price = (price_sum / len(price_list))
+        average_price = format(average_price, '.2f')
     except:
         print("Error 3: Missing or bad data.")
         exit()
