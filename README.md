@@ -55,3 +55,7 @@ In this assignment I had to create two programs that edited arrays throughout th
 ## Assignment 14
 
 In this assignment, I had to create two programs that edited arrays that used the information from a file. Both of the programs that I created took grades from a .txt file that held information formatted as name, grade. The two of the programs were essentially the same except the second one was made so that it would call out errors instead of just failing. This is going to be helpful in the future for when I need to read files and change them based on what I need at that time. I can also use the troubleshooting techniques that I learned/made in the future.
+
+## Final Project
+
+In the final assignment of the semester, I had to create a program where the program read a catalog of CD's title, artist, country, price, year, and company. The program then produced the information in a menu in the format of: title - artist - country - price - year. Then at the bottom of the menu, it would produce the average price and number of CDs in the format of # items - $#.## average price. I can use a lot of the techniques I learned for this project in the future, especially the process of reading XML tags.
