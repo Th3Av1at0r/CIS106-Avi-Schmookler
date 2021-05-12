@@ -24,47 +24,40 @@ def get_catalog(file_name):
 
 def get_title_list(catalog):
     find_object = "'CD/TITLE'"
-    title_list = get_processed_list(find_object)
+    title_list = get_processed_list(find_object, catalog)
     
     return title_list
     
 
 def get_artist_list(catalog):
     find_object = "'CD/ARTIST'"
-    artist_list = get_processed_list(find_object)
+    artist_list = get_processed_list(find_object, catalog)
 
     return artist_list
 
 
 def get_country_list(catalog):
     find_object = "'CD/COUNTRY'"
-    country_list = get_processed_list(find_object)
+    country_list = get_processed_list(find_object, catalog)
 
     return country_list
-
-    
-def get_company_list(catalog):
-    find_object = "'CD/COMPANY'"
-    company_list_list = get_processed_list(find_object)
-    
-    return company_list
 
 
 def get_price_list(catalog):
     find_object = "'CD/PRICE'"
-    price_list_list = get_processed_list(find_object)
+    price_list_list = get_processed_list(find_object, catalog)
 
     return price_list
 
     
 def get_year_list(catalog):
     find_object = "'CD/YEAR'"
-    year_list = get_processed_list(find_object)
+    year_list = get_processed_list(find_object, catalog)
     
     return year_list
     
     
-def get_processed_list(find_object):
+def get_processed_list(find_object, catalog):
     try:
         information_file = ET.fromstring(catalog)
         processed_list = [element.text for element in 
@@ -113,7 +106,6 @@ def main():
     title_list = get_title_list(catalog)
     artist_list = get_artist_list(catalog)
     country_list = get_country_list(catalog)
-    company_list = get_company_list(catalog)
     price_list = get_price_list(catalog)
     year_list = get_year_list(catalog)
     average_price = get_average_price(price_list)
