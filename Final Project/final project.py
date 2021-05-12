@@ -21,43 +21,7 @@ def get_catalog(file_name):
         print("Error 1: Missing or bad data.")
         exit()
 
-
-def get_title_list(catalog):
-    find_object = "'CD/TITLE'"
-    title_list = get_processed_list(find_object, catalog)
-    
-    return title_list
-    
-
-def get_artist_list(catalog):
-    find_object = "'CD/ARTIST'"
-    artist_list = get_processed_list(find_object, catalog)
-
-    return artist_list
-
-
-def get_country_list(catalog):
-    find_object = "'CD/COUNTRY'"
-    country_list = get_processed_list(find_object, catalog)
-
-    return country_list
-
-
-def get_price_list(catalog):
-    find_object = "'CD/PRICE'"
-    price_list_list = get_processed_list(find_object, catalog)
-
-    return price_list
-
-    
-def get_year_list(catalog):
-    find_object = "'CD/YEAR'"
-    year_list = get_processed_list(find_object, catalog)
-    
-    return year_list
-    
-    
-def get_processed_list(find_object, catalog):
+def get_processed_list(catalog, find_object):
     try:
         information_file = ET.fromstring(catalog)
         processed_list = [element.text for element in 
@@ -65,26 +29,22 @@ def get_processed_list(find_object, catalog):
     except:
         print("Error 2: Missing or bad data.")
         exit()
-        
-    return processed_list    
-    
-    
-    
 
 
 def get_average_price(price_list):
-    try:
-        price_list = [float(number) for number in price_list]
-        average_price = (sum(price_list) / len(price_list))
-        average_price = format(average_price, '.2f')
-    except:
-        print("Error 3: Missing or bad data.")
-        exit()
+#    try:
+    for element in list(price_list):
+        float(number)
+    average_price = (sum(price_list) / len(list(price_list)))
+    average_price = format(average_price, '.2f')
+#    except:
+#        print("Error 3: Missing or bad data.")
+#        exit()
         
     return average_price
 
 
-def display_results(title_list, artist_list, country_list, company_list, 
+def display_results(title_list, artist_list, country_list, 
 year_list, price_list, average_price):
     try:
         counter = 0
@@ -103,13 +63,13 @@ year_list, price_list, average_price):
 def main():
     file_name = "cd_catalog.xml"
     catalog = get_catalog(file_name)
-    title_list = get_title_list(catalog)
-    artist_list = get_artist_list(catalog)
-    country_list = get_country_list(catalog)
-    price_list = get_price_list(catalog)
-    year_list = get_year_list(catalog)
+    title_list = get_processed_list(catalog, "CD/TITLE")
+    artist_list = get_processed_list(catalog, "CD/ARTIST")
+    country_list = get_processed_list(catalog, "CD/COUNTRY")
+    price_list = get_processed_list(catalog, "CD/PRICE")
+    year_list = get_processed_list(catalog, "CD/YEAR")
     average_price = get_average_price(price_list)
-    display_results(title_list, artist_list, country_list, company_list, 
+    display_results(title_list, artist_list, country_list, 
     year_list, price_list, average_price)
     
     
