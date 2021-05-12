@@ -21,6 +21,7 @@ def get_catalog(file_name):
         print("Error 1: Missing or bad data.")
         exit()
 
+
 def get_processed_list(catalog, find_object):
     try:
         information_file = ET.fromstring(catalog)
@@ -34,14 +35,15 @@ def get_processed_list(catalog, find_object):
 
 
 def get_average_price(price_list):
-#    try:
+    try:
+    price_sum = 0
     for element in list(price_list):
-        float(element)
-    average_price = (sum(price_list) / len(price_list))
+        price_sum = price_sum + float(element)
+    average_price = (price_sum / len(price_list))
     average_price = format(average_price, '.2f')
-#    except:
-#        print("Error 3: Missing or bad data.")
-#        exit()
+    except:
+        print("Error 3: Missing or bad data.")
+        exit()
         
     return average_price
 
