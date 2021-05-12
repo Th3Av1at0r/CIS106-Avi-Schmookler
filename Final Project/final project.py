@@ -105,15 +105,18 @@ def get_average_price(price_list):
 
 def display_results(title_list, artist_list, country_list, company_list, 
 year_list, price_list, average_price):
-    counter = 0
-    while (counter < len(title_list)):
-        print(title_list[counter] + " - " + 
-        artist_list[counter] + " - " + country_list[counter] + " - " + 
-        price_list[counter] + " - " + year_list[counter])
-        counter += 1
-    print("There were " + str(len(title_list)) + 
-    " CDs and the average price is $" + average_price)
-    
+    try
+        counter = 0
+        while (counter < len(title_list)):
+            print(title_list[counter] + " - " + 
+            artist_list[counter] + " - " + country_list[counter] + " - " + 
+            price_list[counter] + " - " + year_list[counter])
+            counter += 1
+        print("There were " + str(len(title_list)) + 
+        " CDs and the average price is $" + average_price)
+    except:
+        print("Error: Missing or bad data.")
+        exit()
     
 def main():
     file_name = "cd_catalog.xml"
@@ -129,5 +132,4 @@ def main():
     year_list, price_list, average_price)
     
     
-main()    
-    
+main()
