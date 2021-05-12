@@ -118,6 +118,7 @@ year_list, price_list, average_price):
         print("Error: Missing or bad data.")
         exit()
     
+    
 def main():
     file_name = "cd_catalog.xml"
     catalog = get_catalog(file_name)
