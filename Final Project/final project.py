@@ -26,55 +26,57 @@ def get_title_list(catalog):
     try:
         information_file = ET.fromstring(catalog)
         title_list = [el.text for el in information_file.findall('CD/TITLE')]
-    
-    return title_list
     except:
         print("There was an error reading the file.")
         exit()
+    
+    return title_list
     
 
 def get_artist_list(catalog):
     try:
         information_file = ET.fromstring(catalog)
         artist_list = [el.text for el in information_file.findall('CD/ARTIST')]
-    
-    return artist_list
     except:
         print("There was an error reading the file.")
         exit()
+
+    return artist_list
 
 
 def get_country_list(catalog):
     try:
         information_file = ET.fromstring(catalog)
-        country_list = [el.text for el in information_file.findall('CD/COUNTRY')]
-    
-    return country_list
+        country_list = [el.text for el in 
+        information_file.findall('CD/COUNTRY')]
     except:
         print("There was an error reading the file.")
         exit()
+
+    return country_list
 
     
 def get_company_list(catalog):
     try:
         information_file = ET.fromstring(catalog)
-        company_list = [el.text for el in information_file.findall('CD/COMPANY')]
-    
-    return company_list
+        company_list = [el.text for el in 
+        information_file.findall('CD/COMPANY')]
     except:
         print("There was an error reading the file.")
         exit()
+    
+    return company_list
 
 
 def get_price_list(catalog):
     try:
         information_file = ET.fromstring(catalog)
         price_list = [el.text for el in information_file.findall('CD/PRICE')]
-    
-    return price_list
     except:
         print("There was an error reading the file.")
         exit()
+
+    return price_list
 
     
 def get_year_list(catalog):
@@ -82,11 +84,11 @@ def get_year_list(catalog):
         information_file = ET.fromstring(catalog)
         year_list = [element.text for element in 
         information_file.findall('CD/YEAR')]
-    
-    return year_list
     except:
         print("There was an error reading the file.")
         exit()
+    
+    return year_list
 
 
 def get_average_price(price_list):
@@ -123,4 +125,5 @@ def main():
     year_list, price_list, average_price)
     
     
-main()
+main()    
+    
