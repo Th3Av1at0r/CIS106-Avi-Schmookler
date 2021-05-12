@@ -18,7 +18,7 @@ def get_catalog(file_name):
             
             return catalog
     except:
-        print("There was an error reading the file.")
+        print("Error: Missing or bad data.")
         exit()
 
 
@@ -27,7 +27,7 @@ def get_title_list(catalog):
         information_file = ET.fromstring(catalog)
         title_list = [el.text for el in information_file.findall('CD/TITLE')]
     except:
-        print("There was an error reading the file.")
+        print("Error: Missing or bad data.")
         exit()
     
     return title_list
@@ -38,7 +38,7 @@ def get_artist_list(catalog):
         information_file = ET.fromstring(catalog)
         artist_list = [el.text for el in information_file.findall('CD/ARTIST')]
     except:
-        print("There was an error reading the file.")
+        print("Error: Missing or bad data.")
         exit()
 
     return artist_list
@@ -50,7 +50,7 @@ def get_country_list(catalog):
         country_list = [el.text for el in 
         information_file.findall('CD/COUNTRY')]
     except:
-        print("There was an error reading the file.")
+        print("Error: Missing or bad data.")
         exit()
 
     return country_list
@@ -62,7 +62,7 @@ def get_company_list(catalog):
         company_list = [el.text for el in 
         information_file.findall('CD/COMPANY')]
     except:
-        print("There was an error reading the file.")
+        print("Error: Missing or bad data.")
         exit()
     
     return company_list
@@ -73,7 +73,7 @@ def get_price_list(catalog):
         information_file = ET.fromstring(catalog)
         price_list = [el.text for el in information_file.findall('CD/PRICE')]
     except:
-        print("There was an error reading the file.")
+        print("Error: Missing or bad data.")
         exit()
 
     return price_list
@@ -85,7 +85,7 @@ def get_year_list(catalog):
         year_list = [element.text for element in 
         information_file.findall('CD/YEAR')]
     except:
-        print("There was an error reading the file.")
+        print("Error: Missing or bad data.")
         exit()
     
     return year_list
@@ -97,7 +97,7 @@ def get_average_price(price_list):
         average_price = (sum(price_list) / len(price_list))
         average_price = format(average_price, '.2f')
     except:
-        print("There was an error reading the file.")
+        print("Error: Missing or bad data.")
         exit()
         
     return average_price
